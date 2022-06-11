@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="255.68115px" height="255.68115px" viewBox="0 0 255.68115 255.68115" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L255.681 0L255.681 255.681L0 255.681L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Html-5-icon-Copy">
+    <path d="M0 0L255.681 0L255.681 255.681L0 255.681L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M218.395 26.6329L37.2876 26.6329L53.2676 207.74L127.841 229.047L202.415 207.74L218.395 26.6329L218.395 26.6329L218.395 26.6329Z" id="Shape" fill="#E65100" stroke="none" />
+      <path d="M127.841 42.6129L127.841 212.534L187.5 195.489L200.816 42.6129L127.841 42.6129Z" id="Shape" fill="#FF6D00" stroke="none" />
+      <path d="M127.841 133.168L127.841 111.861L173.65 111.861L169.921 173.118L127.841 186.968L127.841 164.596L149.68 157.138L151.278 133.168L127.841 133.168L127.841 133.168ZM175.248 90.5542L176.846 69.2474L127.841 69.2474L127.841 90.5542L175.248 90.5542L175.248 90.5542Z" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+      <path d="M127.84 164.596L127.84 186.968L85.7595 173.119L83.6289 143.822L104.936 143.822L106.001 157.139L127.84 164.596L127.84 164.596ZM101.74 90.5542L127.841 90.5542L127.841 69.2474L79.3677 69.2474L83.0964 133.168L127.841 133.168L127.841 111.861L103.338 111.861L101.74 90.5542L101.74 90.5542Z" id="Shape" fill="#EEEEEE" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

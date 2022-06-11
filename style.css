@@ -1,0 +1,743 @@
+@font-face {
+    font-family: poppins-semibold;
+    src: url(ttf-files/Poppins-SemiBold.ttf);
+  }
+@font-face {
+    font-family: poppins-bold;
+    src: url(ttf-files/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(ttf-files/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url(ttf-files/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: OpenSans-light;
+    src: url(ttf-files/OpenSans-Light.ttf)
+}
+@font-face {
+    font-family: OpenSans-semibold;
+    src: url(ttf-files/OpenSans-SemiBold.ttf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    content-visibility: auto;
+}
+.top-area, .top-header-area{
+    background: rgba(249,242,236,0.8);
+    background-blend-mode: normal;
+    border-radius: 0 0 36px 36px;
+    padding: 1% 2% 0.2%;
+}
+.top-header-area{
+    border-radius: 0;
+    padding-bottom: 0;
+}
+header{
+    border-radius: 20px;
+    background: #ffffff;
+    background-blend-mode: normal;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(222,222,222,0.34);
+    color: #000;
+    display: flex;
+}
+header:hover{
+    box-shadow: 1px 4px 6px rgba(222,222,222,0.40);
+}
+.logo , .search-bar{
+    width: 20%;
+    text-align: right;
+    padding: 1% 1% 1% 2%;
+}
+.search-bar{
+    margin-right: 2%;
+    position: relative;
+}
+.search-bar button, .search-bar input[type=text]{
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+.search-bar input[type=text]{
+    width: 0%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.search-bar button:focus > .search-bar input[type=text]{
+    width: 100% !important;
+  }
+.search-bar img{
+    background-color: #0556f3;
+    padding: 2%;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.logo p{ 
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 3% 0;
+}
+.logo a{
+    text-decoration: none;
+    font-family: 'poppins-medium';
+    color: #000;
+    display: inline-block;
+    margin-left: 4%;
+    font-size: large;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 20%;
+    margin-right: 2%;
+}
+
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+/* nav details{
+    width: 15%;
+}
+nav summary{
+list-style: none;
+    display: flex;
+    color: #25265e;
+    padding: 1%;
+    font-family: 'poppins-medium';
+    cursor: pointer;
+}
+nav details summary::-webkit-details-marker {
+    display:none;
+  } */
+nav a{
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'poppins-medium';
+    font-size: large;
+    color: #25265e;
+}
+nav a img:focus{
+    transform: rotate(-90deg);
+}
+/* nav details > summary::after{
+    content: url(images/chevron-down.svg);
+    display: inline-flex;
+    transform: rotate(90deg);
+    transition: transform 0.4s ease;
+}
+nav details[open] > summary::after{
+    transform: rotate(-90deg);
+} */
+
+/* web-banner styling (homepage) */
+.web-banner{
+	display: flex;
+	justify-content: center;
+	padding: 4% 3% 0.5%;
+}
+.web-bannner-heading{
+	font-family: 'poppins-semibold';
+    	color: #3b3b3b;
+    	font-size: xxx-large;
+}
+.web-banner-txt .hr-line, .ex-sub-nav .hr-line, .fwptutsubnav-desc .hr-line{
+animation: text 1s forwards;
+}
+
+@keyframes text {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 40%;
+  }
+}
+.web-banner-desc{
+        font-family: 'poppins-medium';
+        color: #404040;
+        font-size: x-large;
+        width: 69%;
+}
+.key-points{
+    padding: 2% 0;
+}
+.key-points p{
+    font-family: 'poppins-medium';
+    color: #404040;
+    font-size: larger;
+    padding: 1%;
+}
+.web-banner-txt a {
+    background-color: #3577F8;
+    padding: 2%;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    width: 27%;
+    display: inline-block;
+    font-family: 'poppins-medium';
+    margin: 2%;
+    border-radius: 17px;
+}
+.arrow-down{
+    text-align: center;
+}
+.arrow-down a{
+    display: inline-block;
+    background: #becbe5;
+    background-blend-mode: normal;
+    border-radius: 41px;
+    padding: 1% 1%;
+    text-align: center;
+    margin-top: -2%;
+}
+/* Courses heading styles */
+.choose-courses-heading{
+    padding: 4% 0;
+    text-align: center;
+}
+.choose-courses-heading .heading-1{
+    font-family: 'poppins-semibold';
+    font-size: xx-large;
+    color: #25265E;
+}
+.choose-courses-heading .heading-2{
+    font-family: 'poppins-medium';
+    color: #3d3d3d;
+    font-size: x-large;
+}
+.courses-item{
+    display: flex;
+    justify-content: center;
+}
+.courses-desc{
+    padding: 2% 0;
+    width: 50%;
+    color: #3d3d3d;
+}
+.courses-desc .course-heading{
+    font-family: 'poppins-semibold';
+    font-size: x-large;
+}
+.courses-desc p{
+    font-family: 'poppins-medium';
+    font-size: larger;
+}
+.courses-desc a{
+    text-decoration: none;
+    font-family: 'poppins-medium';
+    font-size: larger;
+    color: #3577F8;
+    display: inline-block;
+    padding: 1%;
+}
+.courses-desc .explore-btn{
+    display: flex;
+}
+/* Why analyze code */
+.why-to-choose{
+    background-image: url('images/why-analyze-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+}
+.why-to-choose .heading{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'poppins-semibold';
+    color: #25265E;
+}
+.why-to-choose .desc{
+    display: flex;
+    justify-content: center;
+}
+.why-to-choose .features{
+    width: 50%;
+    padding: 2% 0.5%;
+}
+.why-to-choose .features details{
+    padding: 3%;
+    background-color: white;
+    background-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgb(201 201 201 / 50%);
+    width: 75%;
+    border-radius: 8px;
+    color: #25265e;
+    font-family: 'poppins-medium';
+    margin-bottom: 2%;
+}
+.why-to-choose summary{
+    list-style: none;
+    display: flex;
+    color: #25265e;
+    justify-content: space-between;
+    padding: 1%;
+    cursor: pointer;
+}
+.why-to-choose details summary::-webkit-details-marker {
+    display:none;
+  }
+.why-to-choose details > summary::after{
+    content: url(images/chevron-down.svg);
+    display: inline-flex;
+    transform: rotate(90deg);
+    transition: transform 0.4s ease;
+}
+.why-to-choose details[open] > summary::after{
+    transform: rotate(-90deg);
+}
+.details-content-why-to-choose p{
+    color: #3d3d3d;
+}
+
+/* editor-feature-show */
+.editor-feature-show{
+    text-align: center;
+    padding: 2% 0;
+}
+.editor-feature-show .heading, .editor-feature-show .desc, .editor-feature-show a{
+    margin: 1% 0;
+}
+.editor-feature-show .heading{
+    font-size: xx-large;
+    font-family: 'poppins-semibold';
+    color: #25265e;
+}
+.editor-feature-show .desc{
+    font-size: larger;
+    font-family: 'poppins-medium';
+    color: #3d3d3d;
+}
+.editor-feature-show a{
+    display: inline-block;
+    padding: 1%;
+    font-family: 'poppins-medium';
+    border-radius: 6px;
+    background-color: #3577F8;
+    text-decoration: none;
+    color: #fff;
+}
+/* footer styling */
+footer{
+    background-color: #273343;
+    color: #fff;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+footer .footer-columns-large{
+    width: 30%;
+    padding-top: 0.9%;
+
+}
+footer .footer-columns-small{
+    width: 18%;
+    padding-top: 0.9%;
+    line-height: 24pt;
+}
+.footer-columns-large .logo{
+    width: 80%;
+    }
+    .footer-columns-large p a{
+        font-family: 'poppins-regular';
+        font-size: x-large;
+        color: #fff;
+    }
+    .footer-columns-large .social-heading{
+        font-size: large;
+        margin-bottom: 4%;
+        font-family : 'Opensans-semibold';
+        }
+    .footer-columns-large .follow-social a {
+        margin-right: 2%;
+    }
+        .footer-columns-large .social-heading span{
+        font-family: 'poppins-regular';
+        color: #babdc3;
+        }
+        .footer-columns-small .content-heading{
+        font-family: 'poppins-medium';
+        font-size: larger;
+        }
+        .footer-columns-small li{
+        list-style-type: none;
+        font-family: 'poppins-regular';
+        font-size: medium;
+        color : #A9ADB4;
+        }
+.copyright-area{
+    background-color: #232E3C;
+    color: #A9ADB4;
+    font-size: smaller;
+    padding: 0.9% 3.5%;
+    font-family: 'poppins-regular';
+}
+.footer-columns-large .newsletter-heading{
+    font-family: 'poppins-regular';
+    font-size: large;
+}
+.footer-columns-large form{
+margin: 3% 0;
+display: flex;
+}     
+.footer-columns-large input[type=email]{
+    border: none;
+    border-radius: 6px 0 0 6px;
+    padding: 4%;
+    background-color: #dfdfdf;
+}
+.footer-columns-large input[type=submit]{
+    border: none;
+    padding: 3%;
+    border-radius: 0 6px 6px 0;
+    color: #fff;
+    font-size: inherit;
+    background-color: #0556f3;
+    font-family: 'poppins-regular';
+}
+
+/* 
+/*   dropdown styling */
+.drop-down-content-tut, .drop-down-content-exer{
+    display: flex; 
+    justify-content: center;
+    display: none;
+    width: 35%;
+    position: absolute;
+    left: 550px;
+    background-blend-mode: normal;
+    background-color: inherit;
+}
+.drop-down-content-exer{
+    left: 700px;
+}
+
+.drop-down-content-tut .left-menu, .drop-down-content-exer .left-menu{
+    background-color: white;
+    padding: 5% 2%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #d3dce6;
+    border-radius: 0 0 0 8px;
+    box-shadow: 0px 2px 4px rgb(222 222 222 / 34%);
+}
+.drop-down-content-tut .left-menu p, .drop-down-content-exer .left-menu p{
+    color: #3b3b3b;
+    overflow: hidden;
+    font-size: medium;
+    cursor: pointer;
+    border-right: 4px solid #ffffff;
+    padding: 8% 8%;
+    font-family: 'poppins-medium';
+}
+
+.drop-down-content-tut .right-menu, .drop-down-content-exer .exright-menu{
+    background-color: #FBFBFB;
+    display: flex;
+    padding: 2.3% 2%;
+    width: 60%;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px rgb(222 222 222 / 34%);
+}
+.drop-down-content-exer .exright-menu{
+    width: 75%;
+}
+.drop-down-content-tut .right-menu a, .drop-down-content-exer .exright-menu a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #3b3b3b;
+    font-family: 'poppins-regular';
+    padding-left: 8%;
+    margin-bottom: 2%;
+}
+.drop-down-content-tut .right-menu a:hover, .drop-down-content-exer .exright-menu a:hover{
+color: #0556f3;
+}
+.drop-down-content-tut .right-menu .seeall, .drop-down-content-exer .exright-menu .seeall{
+color: #357adf;
+display: flex;
+align-items: center;
+font-family: 'poppins-semibold';
+margin: 4% 0;
+}
+.drop-down-content-tut .right-menu .desc-heading, .drop-down-content-exer .exright-menu .desc-heading{
+    color: #3b3b3b;
+    font-family: 'poppins-semibold';
+    font-size: large;
+    padding: 8%;
+} 
+
+
+/* html tutorial page  styling */
+
+.tut-top-area{
+    padding: 3%;
+    background: rgba(249,242,236,0.8);
+    background-blend-mode: normal;
+}
+.tut-top-area .sub-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tut-top-area .tutlogo{
+    width: 15%;
+}
+.tut-top-area .fwptutlogo{
+    width: 30%;
+    margin-bottom: 3%;
+}
+.tut-subnav-desc{
+    width: 45%;
+}
+.tut-top-area .web-banner-heading{
+        font-family: 'poppins-semibold';
+    	color: #3b3b3b;
+    	font-size: 39px;
+}
+.tut-top-area .tutsubnav-desc{
+    width: 45%;
+    padding: 2% 0;
+}
+.tut-top-area .fwptutsubnav-desc{
+    width: 52%;
+    padding: 2% 0;
+}
+.tut-top-area .tutnavitems{
+    display: flex;
+    padding: 2% 0;
+    width: 75%;
+    border-bottom: 4px solid #0556F3;
+}
+.tutnavitems p{
+    margin-right: 5%;
+}
+.tutnavitems a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'poppins-medium';
+    font-size: larger;
+    color: #3b3b3b;
+}
+.tutnavitems a:hover{
+    color: #0556f3;
+}
+.tut-top-area .tutdesc{
+    font-family: 'poppins-medium';
+    color: #404040;
+    margin: 1% 14% 3% 14%;
+    text-align: center;
+    font-size: large;
+}
+.fwptutsubnav-desc .tutdesc{
+    font-family: 'poppins-medium';
+    color: #404040;
+    margin: 3% 0 0;
+    text-align: left;
+    font-size: large;
+}
+.blob1 img, .cssbannerblob1{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+.tut-content-block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+    margin-top: -3%;
+}
+.tut-content-sidebar, .tut-content-show-content{
+    border-radius: 8px;
+    background: #ffffff;
+    background-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgba(100,100,100,0.4);
+}
+
+.tut-content-sidebar{
+    width: 20%;
+    margin-right: 3%;
+    padding: 2% 1%;
+    max-height: fit-content;
+}  
+.tut-content-sidebar-heading{
+    border-bottom: 2px solid #93b7ff;
+    font-size: larger;
+    font-family: 'poppins-semibold';
+    color: #0556f3;
+    padding-bottom: 3%;
+    text-align: center;
+    margin-bottom: 8%;
+}
+.tut-content-show-content{
+    width: 60%;
+    padding: 2% 1%;
+}
+.blob2 img{
+    position: fixed;
+    z-index: -1;
+    left: 84%;
+    top: 254px;
+}
+.tut-content-sidebar a{
+    display: block;
+    padding: 2% 4%;
+    color:#3b3b3b;
+    margin: 2%;
+    text-decoration: none;
+    font-family: 'poppins-medium';
+}
+
+a.httutsidebaritem-btn:hover{
+    border: none;
+    color: #0556f3;
+}
+a.tutitemactive, a.tutitemactive:hover{
+    color: #256af0;
+    border-left: 4px solid blue;
+    background-color: #e5eeff;
+}
+.tutcontent-heading{
+    border-bottom: 3px solid #0556f3;
+    font-size: x-large;
+    width: fit-content;
+    font-family: 'poppins-semibold';
+    color: #0556f3;
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+}
+.tutcontent-subheading{
+    font-size: larger;
+    font-family: 'poppins-medium';
+    color: #3b3b3b;;
+}
+.tut-content-show-content .tut-content-description{
+    font-family: 'poppins-regular';
+    margin: 2% 0;
+}
+.tut-content-show-content .tut-content-description span{
+    font-weight: 600;
+}
+.tut-content-show-content ul{
+    margin-bottom: 2%;
+    margin-left: 1%;
+}
+.tut-content-show-content li{
+    margin-left: 3%;
+    margin-top: 1%;
+    font-family: 'poppins-regular';
+}
+.tut-content-show-content ol li img{
+    margin: 2% 0;
+}
+.tut-content-show-content .codeexamplebox{
+    color: #3b3b3b;
+    border-radius: 8px;
+    font-family: 'poppins-medium';
+    background: #ffffff;
+    margin: 2% 0;
+    background-blend-mode: normal;
+    border: 1px solid #0556f3;
+    box-shadow: 1px 2px 2px rgb(8 87 243);
+    width: fit-content;
+    padding: 3%;
+}
+.getdescdd1, .getdescdd2, .getdescdd3, .getdescdd4, .getexdd1, .getexdd2, .getexdd3{
+    display: none;
+}
+
+/* css exercises styling */ 
+.ex-sub-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+}
+.exbannerdesc{
+font-family: 'poppins-medium';
+    color: #404040;
+    font-size: large;
+}
+.descexer .web-banner-heading{
+    font-size: xx-large;
+}
+.ex-tutarea{
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.exerciserow{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .exerciseconcol{
+        width: 25%;
+        margin: 1% 1% 2% 1%;
+        border-radius: 8px;
+        border: none;
+        border-top: 5px solid #0556f3;
+        background-color: #fff;
+        background: #ffffff;
+        background-blend-mode: normal;
+        box-shadow: 0px 2px 4px rgb(100 100 100 / 40%);
+    }
+    .exerciseconcolp{
+        padding: 1%;
+    }
+    .cssexersno{
+        font-family: 'poppins-semibold';
+        width: 12%;
+        background-color: #0556f3;
+        outline: none;
+        border: none;
+        margin-top: 0;
+        border-radius: 3px 0 24px;
+        color: #fff;
+        padding: 2%;
+    }
+    .exerciseconcol .exerciseheading a{
+        font-family: 'poppins-regular';
+        text-decoration: none;
+        color: #fff;
+        
+    }
+    .exerciseconcol .exerciseheading{
+        background-color: #0556f3;
+        border: none;
+        padding: 4%;
+        border-radius: 0 0 8px 8px;
+    }
+
+    .descexer{
+    margin-left: 3%;
+    width: 65%;
+    }
+    .fwpblob1{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -99px;
+    }
