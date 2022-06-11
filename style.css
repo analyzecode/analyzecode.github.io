@@ -741,3 +741,43 @@ font-family: 'poppins-medium';
     top: 0;
     left: -99px;
     }
+
+
+    /* online editor coding */
+
+    .codegetresult {
+        background-color: #32a1dd;
+        padding: 7px 0;
+        font-family: 'poppins-black';
+        color: #ffffff;
+        font-size: medium;
+        border: none;
+        width: 6%;
+        border-radius: 2px;
+      }
+      .codeeditor-area{
+        display: flex;
+        justify-content: center;
+        padding: 3% 1%;
+        background-color: #faf5f0;
+      }
+      .codeeditor, .codegetoutput{
+    border-radius: 8px;
+    font-family: 'poppins-regular';
+    background: #ffffff;
+    background-blend-mode: normal;
+    box-shadow: 0px 2px 4px rgb(100 100 100 / 40%);
+      }
+      .codeeditor{
+        width: 48%;
+        max-height: 570px;
+        min-height: 570px;
+        margin-right: 1%;
+        overflow:auto;
+        outline: none;
+        padding: 1%;
+      }
+      .codegetoutput{
+        width: 48%;
+        border: none;
+      }
