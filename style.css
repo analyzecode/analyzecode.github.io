@@ -83,7 +83,7 @@ header:hover{
     border-radius: 8px;
 }
 .logo p{ 
-    width: 70%;
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 3% 0;
@@ -94,6 +94,7 @@ header:hover{
     color: #000;
     display: inline-block;
     margin-left: 4%;
+    width: 55%;
     font-size: large;
 }
 nav{
@@ -527,11 +528,14 @@ margin: 4% 0;
 .tut-top-area .tutnavitems{
     display: flex;
     padding: 2% 0;
-    width: 75%;
+    width: 82%;
     border-bottom: 4px solid #0556F3;
 }
 .tutnavitems p{
     margin-right: 5%;
+}
+.tutnavitems p:nth-child(3){
+    margin-right: 2%;
 }
 .tutnavitems a{
     text-decoration: none;
@@ -713,6 +717,7 @@ font-family: 'poppins-medium';
         background-color: #0556f3;
         outline: none;
         border: none;
+        border-top: 3px solid #0556f3;
         margin-top: 0;
         border-radius: 3px 0 24px;
         color: #fff;
@@ -758,7 +763,7 @@ font-family: 'poppins-medium';
       .codeeditor-area{
         display: flex;
         justify-content: center;
-        padding: 3% 1%;
+        padding: 3% 2.5%;
         background-color: #faf5f0;
       }
       .codeeditor, .codegetoutput{
@@ -781,3 +786,38 @@ font-family: 'poppins-medium';
         width: 48%;
         border: none;
       }
+      nav.editor-options{
+        width: 76%;
+      }
+      .editor-options p{
+        width: 10%;
+      }
+      .editor-options button{
+        font-size: large;
+        background-color: #0556f3;
+        color: #fff;
+        font-family: 'poppins-medium';
+        outline: none;
+        border-radius: 8px;
+        padding: 1% 2%;
+        border: none;
+      }
+      .exnextbtns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+        }
+        .exnextbtns a{
+        color: #fff;
+            font-family: 'poppins-medium';
+            display: flex;
+            background-color: #0556f3;
+            text-decoration: none;
+            padding: 0.5% 1%;
+            margin-right: 2%;
+            border-radius: 8px;
+        }
+        .exnextbtns .previous img{
+            transform: rotate(-180deg);
+        }

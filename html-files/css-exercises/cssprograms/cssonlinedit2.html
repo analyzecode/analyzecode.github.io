@@ -7,8 +7,7 @@
     <title>analyze-code</title>
     <link rel="stylesheet" href="../../../style.css">
 </head>
-<body>
-    <div class="cssbannerblob1"><img src="../../../images/cssexerwebbannerblob1.svg" alt=""></div>
+<body onload="iframeload();">
     <section class="top-header-area">
         <header>
             <div class="logo">
@@ -18,16 +17,12 @@
                 </p>
             </div>
 
-            <nav>
-                <a class="dropbtn1">Tutorials <img class="droparrow" src="../../images/nav-arrow.svg" alt=""></a>       
-                <a class="dropbtn2">Exercises <img class="droparrow2" src="../../images/nav-arrow.svg" alt=""></a>
-            <a class="dropbtn" >Projects</a>
-            <a class="dropbtn" >Online editor</a>
-            <p class="getresult">Run</p>
+            <nav class="editor-options">
+               <p><a href="../../../index.html"><img src="../../../images/onlinediotsavecode.svg" alt=""></a></p>
+               <p class="changeorient"> <img src="../../../images/rotate.svg" alt=""></p>
+               <p class="savecode"> <img src="../../../images/savecode.svg" alt=""></p>
+            <button class="getresult">Run</button>
         </nav>
-        <div class="search-bar">
-            <img src="../../../images/Search icon.svg" alt="">
-        </div>
     </header>
 </section>
 
@@ -37,7 +32,6 @@
     </div>
     <iframe class="codegetoutput"></iframe>
 </div>
-
 <footer>
     <section class="footer-columns-large">
         <div class="logo">
