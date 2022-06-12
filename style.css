@@ -430,12 +430,13 @@ display: flex;
     display: none;
     width: 35%;
     position: absolute;
-    left: 550px;
+    left: 350px;
     background-blend-mode: normal;
     background-color: inherit;
 }
 .drop-down-content-exer{
     left: 700px;
+    left: 450px;
 }
 
 .drop-down-content-tut .left-menu, .drop-down-content-exer .left-menu{
