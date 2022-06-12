@@ -361,6 +361,7 @@ footer .footer-columns-small{
     .footer-columns-large p a{
         font-family: 'poppins-regular';
         font-size: x-large;
+        text-align: left;
         color: #fff;
     }
     .footer-columns-large .social-heading{
@@ -691,6 +692,7 @@ font-family: 'poppins-medium';
 .ex-tutarea{
     padding-bottom: 5%;
     padding-top: 5%;
+    border-radius: 0 0 0 0;
 }
 .exerciserow{
     display: flex;
@@ -820,4 +822,19 @@ font-family: 'poppins-medium';
         }
         .exnextbtns .previous img{
             transform: rotate(-180deg);
+        }
+
+
+        /* js exercise styling */
+        .jsexblob1 img{
+            top: 0;
+            position: fixed;
+            z-index: -1;
+            right: 144px;
+        }
+        .jsexblob2 img{
+            top: 68px;
+            position: fixed;
+            z-index: -1;
+            left: 14px;
         }
