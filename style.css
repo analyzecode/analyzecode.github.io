@@ -54,10 +54,15 @@ header{
 header:hover{
     box-shadow: 1px 4px 6px rgba(222,222,222,0.40);
 }
-.logo , .search-bar{
+.search-bar{
     width: 20%;
     text-align: right;
     padding: 1% 1% 1% 2%;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 1% 2%;
 }
 .search-bar{
     margin-right: 2%;
@@ -93,8 +98,8 @@ header:hover{
     font-family: 'poppins-medium';
     color: #000;
     display: inline-block;
-    margin-left: 4%;
-    width: 55%;
+    width: 80%;
+    margin-left: 1%;
     font-size: large;
 }
 nav{
@@ -636,8 +641,12 @@ a.tutitemactive, a.tutitemactive:hover{
 }
 .tutcontent-subheading{
     font-size: larger;
+    font-weight: 600;
     font-family: 'poppins-medium';
     color: #3b3b3b;;
+}
+.tutcontent-description{
+    font-family: 'poppins-regular';
 }
 .tut-content-show-content .tut-content-description{
     font-family: 'poppins-regular';
@@ -669,6 +678,9 @@ a.tutitemactive, a.tutitemactive:hover{
     box-shadow: 1px 2px 2px rgb(8 87 243);
     width: fit-content;
     padding: 3%;
+}
+.tutimgtxt .tutcontent-subheading{
+    font-size: 23px;
 }
 .getdescdd1, .getdescdd2, .getdescdd3, .getdescdd4, .getexdd1, .getexdd2, .getexdd3{
     display: none;
@@ -710,7 +722,7 @@ font-family: 'poppins-medium';
         background-blend-mode: normal;
         box-shadow: 0px 2px 4px rgb(100 100 100 / 40%);
     }
-    .exerciseconcolp{
+    .exerciseconcolp{ 
         padding: 1%;
     }
     .cssexersno{
@@ -838,4 +850,14 @@ font-family: 'poppins-medium';
             position: fixed;
             z-index: -1;
             left: 14px;
+        }
+        .tutimgtxt{
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+        }
+        .dospace{
+            margin-top: 3%;
+            color: #0556f3;
         }
