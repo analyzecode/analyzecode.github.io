@@ -35,11 +35,6 @@ editor.addEventListener("keyup", ()=>{
   iframe.src = "data:text/html;charset=utf-8," + encodeURI(html);
 });
 
-gooutput.addEventListener("mouseover", ()=>{
-    var html = editor.textContent;
-    iframe.src = "data:text/html;charset=utf-8," + encodeURI(html);
-  });
-
 
 editor.addEventListener("paste", function(e) {
         e.preventDefault();
