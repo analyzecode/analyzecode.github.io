@@ -26,6 +26,7 @@ const csscode25 = document.querySelector(".csscode25");
 const csscode26 = document.querySelector(".csscode26");
 const csscode27 = document.querySelector(".csscode27");
 const csscode28 = document.querySelector(".csscode28");
+const csscode29 = document.querySelector(".csscode29");
 const csscode30 = document.querySelector(".csscode30");
 const csscode31 = document.querySelector(".csscode31");
 const csscode32 = document.querySelector(".csscode32");
