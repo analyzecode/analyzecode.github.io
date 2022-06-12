@@ -10,7 +10,6 @@ const editor = document.querySelector(".codeeditor");
 const codeeditorarea =  document.querySelector(".codeeditor-area");
 const iframe = document.querySelector(".codegetoutput");
 const btn = document.querySelector(".getresult");
-const gooutput = document.querySelector("body");
 const savecode = document.querySelector(".savecode");
 const changeorient = document.querySelector(".changeorient");
 
