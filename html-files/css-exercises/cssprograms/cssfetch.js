@@ -60,6 +60,9 @@ const csscode59 = document.querySelector(".csscode59");
 const csscode60 = document.querySelector(".csscode60");
 const csscode61 = document.querySelector(".csscode61");
 const csscode62 = document.querySelector(".csscode62");
+const csscode63 = document.querySelector(".csscode63");
+const csscode64 = document.querySelector(".csscode64");
+const csscode65 = document.querySelector(".csscode65");
 
 
 // csscode1
@@ -494,4 +497,26 @@ fetch('cssp-txtfiles/cssProgram62.html')
 .then(res => res.text())
 .then(data=>{
   csscode62.innerText = data
+});
+
+// csscode63
+fetch('cssp-txtfiles/cssProgram63.html')
+.then(res => res.text())
+.then(data=>{
+  csscode63.innerText = data
+});
+
+// csscode64
+fetch('cssp-txtfiles/cssProgram64.html')
+.then(res => res.text())
+.then(data=>{
+  csscode64.innerText = data
+});
+
+
+// csscode65
+fetch('cssp-txtfiles/cssProgram65.html')
+.then(res => res.text())
+.then(data=>{
+  csscode65.innerText = data
 });

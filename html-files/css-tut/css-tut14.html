@@ -167,7 +167,7 @@
     <div class="tut-content-sidebar">
         <p target="_self"class="tut-content-sidebar-heading">Page Index</p>
         <a  target="_self"class="httutsidebaritem-btn" href="#">How to use?</a>
-        <a target="_self"class="httutsidebaritem-btn tutitemactive" href="css-tut2.html">CSS Selectors</a>
+        <a target="_self"class="httutsidebaritem-btn" href="css-tut2.html">CSS Selectors</a>
         <a target="_self"class="httutsidebaritem-btn" href="css-tut3.html">Box Model</a>
         <a target="_self"class="httutsidebaritem-btn" href="css-tut4.html">Height width </a>
         <a target="_self"class="httutsidebaritem-btn" href="css-tut5.html">Padding</a>
@@ -179,98 +179,34 @@
         <a target="_self"class="httutsidebaritem-btn" href="css-tut11.html">List style image property</a>
         <a target="_self"class="httutsidebaritem-btn" href="css-tut12.html">Z-index</a>
         <a target="_self"class="httutsidebaritem-btn" href="css-tut13.html">Overflow</a>
-        <a target="_self"class="httutsidebaritem-btn" href="css-tut14.html">Gradient</a>
+        <a target="_self"class="httutsidebaritem-btn tutitemactive" href="css-tut14.html">Gradient</a>
         <a target="_self"class="httutsidebaritem-btn" href="css-tut15.html">Box Shadow</a>
         <a target="_self"class="httutsidebaritem-btn" href="css-tut16.html">Rounded Corners</a>
-
-
     </div>
     <div class="tut-content-show-content">
-        <p class="tutcontent-heading">CSS Selectors</p> 
-        <p class="tutcontent-subheading">CSS selectors are used to "find" (or select) the HTML elements you want to style.
-We can divide CSS selectors into five categories:</p> 
+        <p class="tutcontent-heading">Gradient</p>
+        <p class="tutcontent-description">
+        CSS gradients let you display smooth transitions between two or more specified colors.
+</p>
+<p class="tutcontent-description">
+CSS defines three types of gradients:
+</p>
 <ul>
-    <li>Simple selectors (select elements based on name, id, class)</li>
-    <li>Combinator selectors (select elements based on a specific relationship between them)</li>
-    <li>Pseudo-class selectors (select elements based on a certain state)</li>
-    <li>Pseudo-elements selectors (select and style a part of an element)</li>
-    <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+<li>Linear Gradients (goes down/up/left/right/diagonally)</li>
+<li>Radial Gradients (defined by their center)</li>
+<li>Conic Gradients (rotated around a center point)</li>
 </ul>
-<p class="tutcontent-subheading">Element Selector</p>
-<div class="codeexamplebox">
-   <strong>// Here, all &lt;p&gt; elements on the page will be center-aligned, with a red text color: </strong><br>
-    p { <br>
-        text-align: center; <br>
-        color: red; <br>
-      } <br>
-    &lt;p&gt; This is paragraph &lt;/p&gt;
-
-</div>
-
-<p class="tutcontent-subheading">ID Selector</p>
-<div class="codeexamplebox">
-   <strong>// The CSS rule below will be applied to the HTML element with id="para1":  </strong><br>
-    #para1 { <br>
-        text-align: center; <br>
-        color: red; <br>
-      } <br>
-    <strong>Like : </strong>
-    &lt;p id="para1" &gt; This is paragraph with para1 named id &lt;/p&gt;
-
-</div>
-
-<p class="tutcontent-subheading">Class Selector</p>
-<div class="codeexamplebox">
-   <strong>// The CSS rule below will be applied to the HTML element with class="para1":  </strong><br>
-    .para1 { <br>
-        text-align: center; <br>
-        color: red; <br>
-      } <br>
-      <strong>Like : </strong>
-      &lt;p class="para1" &gt; This is paragraph with para1 named class &lt;/p&gt;
-</div>
-
-<p class="tutcontent-subheading">Universal Selector</p>
-<div class="codeexamplebox">
-   <strong>// The universal selector (*) selects all HTML elements on the page.The CSS rule below will affect every HTML element on the page: </strong><br>
-    .* { <br>
-        text-align: center; <br>
-        color: red; <br>
-      } 
-</div>
-
-<p class="tutcontent-subheading">Grouping Selector</p>
-<div class="codeexamplebox">
-   <strong>// The grouping selector selects all the HTML elements with the same style definitions.
-    Look at the following CSS code (the h1, h2, and p elements have the same style definitions):  </strong><br>
-    h1 {<br>
-        text-align: center;<br>
-        color: red;<br>
-      }<br>
-      
-      h2 {<br>
-        text-align: center;<br>
-        color: red;<br>
-      }<br>
-      
-      p {<br>
-        text-align: center;<br>
-        color: red;<br>
-      }<br>
-      <strong>// It will be better to group the selectors, to minimize the code.
-To group selectors, separate each selector with a comma.</strong><br>
-h1, h2, p {<br>
-    text-align: center;<br>
-    color: red;<br>
-  }
-</div>
-
+      <p class="tutcontent-subheading">See example :</p>
+      <iframe src="../css-exercises/cssprograms/cssp-txtfiles/cssProgram39.html" class="codeexamplebox" style="width: 90%; height:500px;"></iframe>
+      <p class="trynowbtn">
+        <a target="_blank" href="../css-exercises/cssprograms/cssonlineeditor39.html">See example<img src="../../images/exnext.svg" alt=""></a>
+        </p>  
     </div>
 </section>
 
 <div class="exnextbtns">
-    <a href="css-tut1.html" class="previous"><img src="../../images/exnext.svg" alt=""> Previous</a>
-    <a href="css-tut3.html">Next <img src="../../images/exnext.svg" alt=""></a>
+    <a href="css-tut13.html" class="previous"><img src="../../images/exnext.svg" alt=""> Home</a>
+    <a href="css-tut15.html">Next <img src="../../images/exnext.svg" alt=""></a>
 </div>
 
 <footer>
