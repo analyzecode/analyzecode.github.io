@@ -10,6 +10,7 @@ const htmcode9 = document.querySelector(".htmcode9");
 const htmcode10 = document.querySelector(".htmcode10");
 const htmcode11 = document.querySelector(".htmcode11");
 const htmcode12 = document.querySelector(".htmcode12");
+const htmcode13 = document.querySelector(".htmcode13");
 
 
 // csscode1
@@ -96,3 +97,10 @@ fetch('htm-txtfiles/htm-exer12.html')
   .then(data => {
     htmcode12.innerText = data
   });
+
+  // csscode13
+fetch('htm-txtfiles/htm-exer13.html')
+.then(res => res.text())
+.then(data => {
+  htmcode13.innerText = data
+});

@@ -862,3 +862,19 @@ font-family: 'poppins-medium';
             margin-top: 3%;
             color: #0556f3;
         }
+        .tutimg{
+        margin: 2% 0;
+        }
+
+        .trynowbtn a{
+            text-decoration: none;
+            display: flex;
+            border-radius: 8px;
+            align-items: center;
+            width: fit-content;
+            font-family: 'poppins-medium';
+            color: white;
+            background-color: #0556f3;
+            padding: 2%;
+        }
+   
