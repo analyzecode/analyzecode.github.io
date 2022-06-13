@@ -880,4 +880,8 @@ font-family: 'poppins-medium';
             background-color: #0556f3;
             padding: 2%;
         }
-   
+        .css-tutheading{
+            font-size: xx-large;
+            font-family: 'poppins-semibold';
+    color: #3b3b3b;
+        }
