@@ -74,7 +74,7 @@
 <a href="../htm-tut/html-tut3.html">Structure of a program</a>
 <a href="../htm-tut/html-tut4.html">Elements / Tags</a>
 <a href="../htm-tut/html-tut5.html">Attributes</a>
-<a href="../htm-tut/html-tut5.html">Paragraph tag</a>
+<a href="../htm-tut/html-tut6.html">Paragraph tag</a>
 
 <a href="../htm-tut/html-tut1.html" class="seeall">All Html Tutorials <img src="../../images/Double Right icon.svg" alt=""></a>
 </div>
@@ -171,7 +171,7 @@
         <a target="_self" class="httutsidebaritem-btn" href="html-tut4.html">Elements / Tags</a>
         <a target="_self" class="httutsidebaritem-btn" href="html-tut5.html">Attributes</a>
         <a target="_self" class="httutsidebaritem-btn" href="html-tut6.html">Paragraph tag</a>
-        <a target="_self" class="httutsidebaritem-btn tutitemactive" href="html-tut7.html">Heading tags</a>
+        <a target="_self" class="httutsidebaritem-btn" href="html-tut7.html">Heading tags</a>
         <a target="_self" class="httutsidebaritem-btn" href="html-tut8.html">Image tag</a>
         <a target="_self" class="httutsidebaritem-btn" href="html-tut9.html">Anchor tag</a>
         <a  target="_self" class="httutsidebaritem-btn" href="html-tut10.html">Iframes</a>
@@ -183,53 +183,73 @@
         <a  target="_self" class="httutsidebaritem-btn" href="html-tut16.html">Block and inline elements</a>
         <a  target="_self" class="httutsidebaritem-btn" href="html-tut17.html">Forms and its attribute</a>
         <a  target="_self" class="httutsidebaritem-btn" href="html-tut18.html">Input types</a>
-        <a  target="_self" class="httutsidebaritem-btn" href="html-tut19.html">Semantic Elements</a>
+        <a  target="_self" class="httutsidebaritem-btn tutitemactive" href="html-tut19.html">Semantic Elements</a>
         <a  target="_self" class="httutsidebaritem-btn" href="html-tut20.html">Inter linking</a>
         <a target="_self"class="httutsidebaritem-btn" href="html-tut21.html">Html Emojis</a>
 
     </div>
     <div class="tut-content-show-content">
-       <p class="tutcontent-heading">Html &lt;Heading&gt; tag</p>
-       <p class="tutcontent-description">
-        A HTML heading or HTML h tag can be defined as a title or a subtitle which you want to display on the webpage. When you place the text within the heading tags &lt;h1&gt;.........&lt;/h&gt;>, it is displayed on the browser in the bold format and size of the text depends on the number of heading.
+       <p class="tutcontent-heading">Semantic Elements</p>
+        <p class="tutcontent-description">
+            <ul>
+                <li>A semantic element clearly describes its meaning to both the browser and the developer.</li>
+                <li>Examples of non-semantic elements: &lt;div&gt; and &lt;span&gt; - Tells nothing about its content.</li>
+                <li>Examples of semantic elements: &lt;form&gt;, &lt;table&gt;, and &lt;article&gt; - Clearly defines its content.</li>
+            </ul>
+  </p>
+  <p class="tutcontent-subheading">Html section tag</p>
+  <p class="tutcontent-description">
+    The <strong>&lt;section&gt;</strong> element defines a section in a document. <br>
 
-        There are six different HTML headings which are defined with the &lt;h1&gt; to &lt;h6&gt; tags, from highest level h1 (main heading) to the least level h6 (least important heading).
-        
-        h1 is the largest heading tag and h6 is the smallest one. So h1 is used for most important heading and h6 is used for least important.
-       </p>
-      <img src="../../images/htmptagsyntax.svg" alt="" class="tutimg">
-      <p class="tutcontent-subheading">For example : </p>
+    According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
+    Examples of where a <strong>&lt;section&gt;</strong> element can be used:
+    <ul>
+    <li>Chapters</li>
+    <li>Introduction</li>
+    <li>News items</li>
+    <li>Contact information</li>
+    <p class="tutcontent-description">
+A web page could normally be split into sections for introduction, content, and contact information.</p>
 
-      <div class="codeexamplebox">
-        &lt;!DOCTYPE HTML&gt; <br>
-        &lt;html&gt;<br>
-        &lt;head&gt;<br>
-        &lt;title>Basic Page Structure&lt;/title&gt;<br>
-        &lt;/head&gt;<br>
-        &lt;body&gt;<br>
-        &lt;h1&gt;Use of &lt;h&gt; tag&lt;/h1&gt;<br>
-        &lt;h2&gt;Use of &lt;h2&gt; tag&lt;/h2&gt;<br>
-        &lt;h3&gt;Use of &lt;h3&gt; tag&lt;/h3&gt;<br>
-        &lt;h4&gt;Use of &lt;h4&gt; tag&lt;/h4&gt;<br>
-        &lt;h5&gt;Use of &lt;h5&gt; tag&lt;/h5&gt;<br>
-        &lt;h6&gt;Use of &lt;h6&gt; tag&lt;/h6&gt;<br>
+<p class="tutcontent-subheading">Html header tag</p>
+<p class="tutcontent-description">
+  The <strong>&lt;header&gt;</strong>element represents a container for introductory content or a set of navigational links. <br>
 
-        &lt;/body&gt;<br>
-        &lt;/html&gt;<br>
-        </div>
-        <p class="tutcontent-subheading">Output: </p>
-      <iframe src="../htm-exercises/htmprograms/htm-txtfiles/htm-exer16.html" class="codeexamplebox" height="332px"></iframe>
-      <p class="trynowbtn">
-      <a target="_blank" href="../htm-exercises/htmprograms/htmonlineedit16.html">Try now <img src="../../images/exnext.svg" alt=""></a>
-      </p>
-    </div>
+    A <strong>&lt;header&gt;</strong> element typically contains:
+  <ul>
+  <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+  <li>logo or icon</li>
+  <li>authorship information</li>
+</ul>
+</p>
+
+<p class="tutcontent-subheading">Html footer tag</p>
+<p class="tutcontent-description">
+  The <strong>&lt;footer&gt;</strong>element defines a footer for a document or section. <br>
+
+    A <strong>&lt;footer&gt;</strong> element typically contains:
+  <ul>
+  <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+  <li>logo or icon</li>
+  <li>authorship information</li>
+</ul>
+</p>
+<p class="tutcontent-description">A &lt;footer&gt; element typically contains:</p>
+<ul>
+<li>authorship information</li>
+<li>copyright information</li>
+<li>contact information</li>
+<li>sitemap</li>
+<li>back to top links</li>
+<li>related documents</li>
+</div>
 </section>
 
 <div class="exnextbtns">
-    <a href="html-tut6.html" class="previous"><img src="../../images/exnext.svg" alt=""> Previous</a>
-    <a href="html-tut8.html">Next <img src="../../images/exnext.svg" alt=""></a>
+    <a href="html-tut18.html" class="previous"><img src="../../images/exnext.svg" alt=""> Previous</a>
+    <a href="html-tut20.html">Next <img src="../../images/exnext.svg" alt=""></a>
 </div>
-
+</section>
 
 <footer>
     <section class="footer-columns-large">

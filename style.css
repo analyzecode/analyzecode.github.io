@@ -644,10 +644,13 @@ a.tutitemactive, a.tutitemactive:hover{
     font-size: larger;
     font-weight: 600;
     font-family: 'poppins-medium';
-    color: #3b3b3b;;
+    color: #3b3b3b;
+    margin: 1% 0;
 }
 .tutcontent-description{
     font-family: 'poppins-regular';
+    margin: 1% 0;
+
 }
 .tut-content-show-content .tut-content-description{
     font-family: 'poppins-regular';
