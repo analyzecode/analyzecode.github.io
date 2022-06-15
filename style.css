@@ -883,5 +883,13 @@ font-family: 'poppins-medium';
         .css-tutheading{
             font-size: xx-large;
             font-family: 'poppins-semibold';
-    color: #3b3b3b;
+            color: #3b3b3b;
+        }
+        .jstutlogo{
+            width: 20%;
+        }
+        .jsblob1 img{
+            position: fixed;
+            z-index: -1;
+            top: 0;
         }
