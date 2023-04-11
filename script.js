@@ -1,172 +1,148 @@
-const tutdrop = document.querySelector(".dropbtn1");
-const exerdrop = document.querySelector(".dropbtn2");
-const showtutcon = document.querySelector(".drop-down-content-tut");
-const showexercon = document.querySelector(".drop-down-content-exer");
-const hidecontent = document.querySelector(".top-area");
-const droparrow = document.querySelector(".droparrow");
-const droparrow2 = document.querySelector(".droparrow2");
+const tutdropBtn = document.querySelector("#tutdrop-btn");
+const tutdropBtnIcon = document.querySelector("#tutdrop-btn i");
+const tutdropdownContent =document.querySelector("#tutdropdown-content");
+const exerdropBtn = document.querySelector("#exerdrop-btn");
+const exerdropBtnIcon = document.querySelector("#exerdrop-btn i");
+const exerdropdownContent =document.querySelector("#exerdropdown-content");
 
 
-tutdrop.addEventListener("mouseover", function() {
-    showtutcon.setAttribute("style","display: flex;");
-    droparrow.setAttribute("style","transform: rotate(-180deg);");
-    showexercon.setAttribute("style","display:none;");
-  });
-exerdrop.addEventListener("mouseover", function() {
-    showexercon.setAttribute("style","display: flex;");
-    droparrow2.setAttribute("style","transform: rotate(-180deg);");
-    showtutcon.setAttribute("style","display:none;");
-    });
-hidecontent.addEventListener("mouseout", function() {
-    showtutcon.setAttribute("style","display: none;");
-    droparrow.setAttribute("style","transform: rotate(360deg);");
-    droparrow2.setAttribute("style","transform: rotate(360deg);");
-    showexercon.setAttribute("style","display:none;");
-  }); 
+tutdropBtn.addEventListener("click",()=>{
+exerdropdownContent.classList.add("exercontents-dropdown")
+    tutdropdownContent.classList.toggle("tutcontents-dropdown");
+    tutdropBtnIcon.classList.toggle("bx-flip-vertical");
+})
+exerdropBtn.addEventListener("click",()=>{
+
+    tutdropdownContent.classList.add("tutcontents-dropdown")
+    exerdropdownContent.classList.toggle("exercontents-dropdown");
+    exerdropBtnIcon.classList.toggle("bx-flip-vertical");
+})
+
+// li of sidebar tutorial->
+const htmtut  = document.querySelector("#htmtut");
+const csstut = document.querySelector("#csstut");
+const jstut = document.querySelector("#jstut");
+const dbmstut = document.querySelector("#dbmstut");
+const plsqltut = document.querySelector("#plsqltut");
+
+// content of tutorial->
+const htmtutcontent  = document.querySelector("#htmtutcontent");
+const csstutcontent = document.querySelector("#csstutcontent");
+const jstutcontent = document.querySelector("#jstutcontent");
+const dbmstutcontent = document.querySelector("#dbmstutcontent");
+const plsqltutcontent = document.querySelector("#plsqltutcontent");
+
 // for tutorial dropdown
-const leftmenubtna = document.querySelector(".leftmenu-btns1");
-leftmenubtna.setAttribute("style","color: #256af0;border-right: 4px solid blue;background-color: #e5eeff;");
-const leftmenubtnb = document.querySelector(".leftmenu-btns2");
-const leftmenubtnc = document.querySelector(".leftmenu-btns3");
-const leftmenubtnd = document.querySelector(".leftmenu-btns4");
-let rightmenu = document.querySelector(".right-menu");
-const dropdownc1 = document.querySelector(".getdescdd1");
-const dropdownc2 = document.querySelector(".getdescdd2");
-const dropdownc3 = document.querySelector(".getdescdd3");
-const dropdownc4 = document.querySelector(".getdescdd4");
+// default ->
+htmtutcontent.setAttribute("style","display:block;")
 
 
-leftmenubtna.addEventListener("click", function(){
-  leftmenubtna.setAttribute("style","color: #256af0;border-right: 4px solid blue;background-color: #e5eeff;");
-  leftmenubtnb.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  leftmenubtnc.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  leftmenubtnd.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  rightmenu.innerHTML = document.querySelector(".getdescdd1").innerHTML;
+// conditions for tut dropdown
+htmtut.addEventListener("click", () => {
+    htmtut.classList.add("active");
+    csstut.classList.remove("active");
+    jstut.classList.remove("active");
+    dbmstut.classList.remove("active");
+    plsqltut.classList.remove("active");
+    htmtutcontent.setAttribute("style","display:block;")
+    csstutcontent.setAttribute("style","display:none;")
+    jstutcontent.setAttribute("style","display:none;")
+    dbmstutcontent.setAttribute("style","display:none;")
+    plsqltutcontent.setAttribute("style","display:none;")
+});
+csstut.addEventListener("click", () => {
+    htmtut.classList.remove("active");
+    csstut.classList.add("active");
+    jstut.classList.remove("active");
+    dbmstut.classList.remove("active");
+    plsqltut.classList.remove("active");
+    htmtutcontent.setAttribute("style","display:none;")
+    csstutcontent.setAttribute("style","display:block;")
+    jstutcontent.setAttribute("style","display:none;")
+    dbmstutcontent.setAttribute("style","display:none;")
+    plsqltutcontent.setAttribute("style","display:none;")
+});
+jstut.addEventListener("click", () => {
+
+    htmtut.classList.remove("active");
+    csstut.classList.remove("active");
+    jstut.classList.add("active");
+    dbmstut.classList.remove("active");
+    plsqltut.classList.remove("active");
+    htmtutcontent.setAttribute("style","display:none;")
+    csstutcontent.setAttribute("style","display:none;")
+    jstutcontent.setAttribute("style","display:block;")
+    dbmstutcontent.setAttribute("style","display:none;")
+    plsqltutcontent.setAttribute("style","display:none;")
+});
+dbmstut.addEventListener("click", () => {
+
+    htmtut.classList.remove("active");
+    csstut.classList.remove("active");
+    jstut.classList.remove("active");
+    dbmstut.classList.add("active");
+    plsqltut.classList.remove("active");
+    htmtutcontent.setAttribute("style","display:none;")
+    csstutcontent.setAttribute("style","display:none;")
+    jstutcontent.setAttribute("style","display:none;")
+    dbmstutcontent.setAttribute("style","display:block;")
+    plsqltutcontent.setAttribute("style","display:none;")
+});
+plsqltut.addEventListener("click", () => {
+    htmtut.classList.remove("active");
+    csstut.classList.remove("active");
+    jstut.classList.remove("active");
+    dbmstut.classList.remove("active");
+    plsqltut.classList.add("active");
+
+
+    htmtutcontent.setAttribute("style","display:none;")
+    csstutcontent.setAttribute("style","display:none;")
+    jstutcontent.setAttribute("style","display:none;")
+    dbmstutcontent.setAttribute("style","display:none;")
+    plsqltutcontent.setAttribute("style","display:block;")
 });
 
-leftmenubtnb.addEventListener("click", function(){
-  leftmenubtna.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  leftmenubtnb.setAttribute("style","color: #256af0;border-right: 4px solid blue;background-color: #e5eeff;");
-  leftmenubtnc.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  leftmenubtnd.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  rightmenu.innerHTML = document.querySelector(".getdescdd2").innerHTML;
-});
 
-leftmenubtnc.addEventListener("click",function(){
-  leftmenubtna.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  leftmenubtnb.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  leftmenubtnc.setAttribute("style","color: #256af0;border-right: 4px solid blue;background-color: #e5eeff;");
-  leftmenubtnd.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  rightmenu.innerHTML = document.querySelector(".getdescdd3").innerHTML;
-});
-
-leftmenubtnd.addEventListener("click",function(){
-  leftmenubtna.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  leftmenubtnb.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  leftmenubtnc.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  leftmenubtnd.setAttribute("style","color: #256af0;border-right: 4px solid blue;background-color: #e5eeff;");
-  rightmenu.innerHTML = document.querySelector(".getdescdd4").innerHTML;
-});
 // for exercises dropdown
-const exleftmenubtna = document.querySelector(".exleftmenu-btns1");
-exleftmenubtna.setAttribute("style","color: #256af0;border-right: 4px solid blue;background-color: #e5eeff;");
-const exleftmenubtnb = document.querySelector(".exleftmenu-btns2");
-const exleftmenubtnc = document.querySelector(".exleftmenu-btns3");
-let exrightmenu = document.querySelector(".exright-menu");
+
+const htmexer  = document.querySelector("#htmexer");
+const cssexer = document.querySelector("#cssexer");
+const jsexer = document.querySelector("#jsexer");
+
+// content of tutorial->
+const htmexercontent  = document.querySelector("#htmexercontent");
+const csexercontent = document.querySelector("#cssexercontent");
+const jsexercontent = document.querySelector("#jsexercontent");
+// for tutorial dropdown
+// default ->
+htmexercontent.setAttribute("style","display:block;")
 
 
-
-exleftmenubtna.addEventListener("click", function(){
-  exleftmenubtna.setAttribute("style","color: #256af0;border-right: 4px solid blue;background-color: #e5eeff;");
-  exleftmenubtnb.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  exleftmenubtnc.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  exrightmenu.innerHTML = document.querySelector(".getexdd1").innerHTML;
+// conditions for tut dropdown
+htmexer.addEventListener("click", () => {
+    htmexer.classList.add("active");
+    cssexer.classList.remove("active");
+    jsexer.classList.remove("active");
+    htmexercontent.setAttribute("style","display:block;")
+    cssexercontent.setAttribute("style","display:none;")
+    jsexercontent.setAttribute("style","display:none;")
 });
-
-exleftmenubtnb.addEventListener("click", function(){
-  exleftmenubtna.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  exleftmenubtnb.setAttribute("style","color: #256af0;border-right: 4px solid blue;background-color: #e5eeff;");
-  exleftmenubtnc.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  exrightmenu.innerHTML = document.querySelector(".getexdd2").innerHTML;
+cssexer.addEventListener("click", () => {
+    htmexer.classList.remove("active");
+    cssexer.classList.add("active");
+    jsexer.classList.remove("active");
+    htmexercontent.setAttribute("style","display:none;")
+    cssexercontent.setAttribute("style","display:block;")
+    jsexercontent.setAttribute("style","display:none;")
 });
+jsexer.addEventListener("click", () => {
 
-exleftmenubtnc.addEventListener("click",function(){
-  exleftmenubtna.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  exleftmenubtnb.setAttribute("style","color 3b3b3b;border-right: 4px solid #ffffff");
-  exleftmenubtnc.setAttribute("style","color: #256af0;border-right: 4px solid blue;background-color: #e5eeff;");
-  exrightmenu.innerHTML = document.querySelector(".getexdd3").innerHTML;
+    htmexer.classList.remove("active");
+    cssexer.classList.remove("active");
+    jsexer.classList.add("active");
+    htmexercontent.setAttribute("style","display:none;")
+    cssexercontent.setAttribute("style","display:none;")
+    jsexercontent.setAttribute("style","display:block;")
+    
 });
-
-// temporary alert for search icon
-const searchwarning = document.querySelector(".search-bar");
-searchwarning.addEventListener("click", () =>{
-  alert("Sorry for the inconvenience, searching is under development");
-});
-
-
-
-// coding for online editor (css)
-// const editor = document.querySelector(".editor");
-// const iframe = document.querySelector("iframe");
-// const btn = document.querySelector("button");
-// cssprog1()
-// function cssprog1(){
-//   URL = "helllo.txt";
-//   fetch(URL).then((response)=>{
-//     return response.text();
-//   }).then((data)=>{
-//    data = editor;
-//   })
-// }
-
-// getdata();
-
-// fetch('/html-files/hello.txt')
-// .then(res => res.text())
-// .then(data=>{
-//   editor.innerText = data
-// })
-// try it editor code
-
-// for run button
-// btn.addEventListener("click", () => {
-//   var html = editor.textContent;
-//   iframe.src = "data:text/html;charset=utf-8," + encodeURI(html);
-// });
-
-
-// editor.addEventListener('keyup',()=>{
-//   var html = editor.textContent;
-//   iframe.src = "data:text/html;charset=utf-8," + encodeURI(html);
-// });
-
-// editor.addEventListener("paste", function(e) {
-//         e.preventDefault();
-//         var text = e.clipboardData.getData("text/plain");
-//         document.execCommand("insertText", false, text);
-// });
-
-
-
-// const editor = document.querySelector(".codeeditor");
-// const iframe = document.querySelector(".codegetoutput");
-// const btn = document.querySelector(".getresult");
-
-
-
-// btn.addEventListener("click", () => {
-//   var html = editor.textContent;
-//   iframe.src = "data:text/html;charset=utf-8," + encodeURI(html);
-// });
-
-
-// editor.addEventListener("keyup",()=>{
-//   var html = editor.textContent;
-//   iframe.src = "data:text/html;charset=utf-8," + encodeURI(html);
-// })
-
-// editor.addEventListener("paste", function(e) {
-//         e.preventDefault();
-//         var text = e.clipboardData.getData("text/plain");
-//         document.execCommand("insertText", false, text);
-//     });
