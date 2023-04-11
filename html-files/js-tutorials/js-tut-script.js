@@ -6,11 +6,11 @@
    countbtn = document.querySelector(".countme");
 let btncount = document.querySelector(".count");
 let count = 0;
-fetch('topaarea.html')
-.then(component => component.text())
-.then(data=>{
-  landingpage.innerHTML =data
-});
+// fetch('topaarea.html')
+// .then(component => component.text())
+// .then(data=>{
+//   landingpage.innerHTML =data
+// });
 // fetch('sharePool.html')
 // .then(component => component.text())
 // .then(data=>{

@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analyze Code</title>
+    <title>HTML Tutorial</title>
+    <meta name="keywords" content="html tricks, Features, html">
+    <meta name="description" content="free html tutorials for beginners step by step">
     <link rel="stylesheet" href="../../style.css">
     <link rel="icon" href="../../images/site-logo.svg" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <section class="top-area">
+    <section class="top-area" id="topArea">
         <header>
             <a href="../../index.html">
                 <div class="logo">
@@ -21,240 +22,268 @@
                 </div> 
             </a>
             <nav>
-                <a href="" class="dropdown-btn">Tutorials <i class='bx bx-sm bx-chevron-down'></i></a>
-                <a href="" class="dropdown-btn">Exercises <i class='bx bx-sm bx-chevron-down'></i></a>
-                <a href="" class="dropdown-btn">Games <i class='bx bx-sm bx-chevron-down'></i></a>
-                <a href="" class="dropdown-btn">Code Editor</a>
+                <a href="javascript:void(0)" class="dropdown-btn" id="tutdrop-btn">Tutorials <i class='bx bx-sm bx-chevron-down'></i></a>
+                <a href="javascript:void(0)" class="dropdown-btn" id="exerdrop-btn">Exercises <i class='bx bx-sm bx-chevron-down'></i></a>
+                <a href="https://www.youtube.com/@analyzecode" class="dropdown-btn">Videos <i class='bx bx-play'></i></a>
+                <a href="../css-exercises/css-exercise1.html" class="dropdown-btn">Code Editor</a>
             </nav>
+            <div class="openLogin">
+                <button>Login</button>
+                </div>
             <div class="search-bar">
                 <i class='bx bx-sm bx-search'></i>
             </div>
             <i class='bx bx-md bx-menu-alt-right hamburger-menu-ico'></i>
         </header>
+        <div class="drop-down-container tutcontents-dropdown" id="tutdropdown-content">
+            <div class="sidebar">
+            <ul>
+                <li id="htmtut" class="active">Html</li>
+                <li id="csstut">CSS</li>
+                <li id="jstut">JavaScript</li>
+                <li id="dbmstut">DBMS & MySQL</li>
+                <li id="plsqltut">PL/SQL</li>
+            </ul>
+            </div>
+            <div class="navcontent">
+                <p class="tutcontent-subheading">Popular Tutorials</p>
+                <div id="htmtutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../html-tutorials/htm-tut0.html">HTML Introduction</a></li>
+                   <li> <a href="../html-tutorials/htm-tut1.html">HTML Elements</a></li>
+                   <li> <a href="../html-tutorials/htm-tut2.html">HTML Attributes</a></li>
+                   <li> <a href="../html-tutorials/htm-tut3.html">HTML Headings</a></li>
+                   <li> <a href="../html-tutorials/htm-tut4.html">HTML Paragraphs</a></li>
+                   <li> <a href="../html-tutorials/htm-tut5.html">HTML Comments</a></li></ul>
+    <a href="..//html-tutorials/htm-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="csstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../css-tutorials/css-tut0.html">CSS Introduction</a></li>
+                   <li> <a href="../css-tutorials/css-tut1a.html">CSS Syntax</a></li>
+                   <li> <a href="../css-tutorials/css-tut1b.html">CSS Background</a></li>
+                   <li> <a href="../css-tutorials/css-tut1c.html">CSS Selectors</a></li>
+                   <li> <a href="../css-tutorials/css-tut1d.html">CSS Comments</a></li>
+                   <li> <a href="../css-tutorials/css-tut1e.html">CSS Inline CSS</a></li></ul>
+    <a href="../css-tutorials/css-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="jstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../js-tutorials/js-tut0.html">Getting Started</a></li>
+                    <li><a href="../js-tutorials/js-tut1a.htmls-tutorials/js-tut1a.html">Ways to Execute</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1b.html">JS Variables</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1c.html">Let & Constant</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1d.html">Document Methods</a></li>
+                   <li> <a href="../js-tutorials/js-tut0.htmls-tutorials/js-tut1e.html">JS console.log</a></li></ul>
+    <a href="../js-tutorials/js-tut0.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+    
+                <div id="dbmstutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../mysql-tutorials/dbms-tut1.html">What is DBMS?</a></li>
+                   <li><a href="../mysql-tutorials/dbms-tut7.html">RDBMS 12 Codd's Rule</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut6.html">DBMS Architecture</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut8.html">MySQL Features</a></li>
+                   <li> <a href="../mysql-tutorials/dbms-tut13.html">MySQL CREATE TABLE</a></li>
+                   <li> <a href=../mysql-tutorials/dbms-tut18.html">MySQL Constraints</a></li></ul>
+    <a href="../mysql-tutorials/dbms-tut1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+                <div id="plsqltutcontent" class="tutcontents-dropdown">
+                    <ul>
+                   <li> <a href="../plsql-tutorials/plsql-tut1.html">Getting Started</a></li>
+                   <li><a href="../plsql-tutorials/plsql-tut2.html">PL/SQL Variables</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut3.html">PL/SQL Constant</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut4.html">PL/SQL If</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut5.html">PL/SQL Case</a></li>
+                   <li> <a href="../plsql-tutorials/plsql-tut6.html">PL/SQL Loop</a></li></ul>
+    <a href="../plsql-tutorials/plsql-tut1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                </div>
+            </div>
+    
+    </div>
+    
+            <div class="drop-down-container exercontents-dropdown" id="exerdropdown-content">
+                <div class="sidebar">
+                <ul>
+                    <li id="htmexer" class="active">Html</li>
+                    <li id="cssexer">CSS</li>
+                    <li id="jsexer">JavaScript</li>
+        
+                </ul>
+                </div>
+                <div class="navcontent">
+                    <p class="tutcontent-subheading">Popular Exercises</p>
+                    <div id="htmexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="../html-exercises/htm-exercise1.html">h1 to h6 tags</a></li>
+                       <li> <a href="../html-exercises/htm-exercise2.html">Span two columns</a></li>
+                       <li> <a href="../html-exercises/htm-exercise3.html">Emojis using html</a></li>
+                       <li> <a href="../html-exercises/htm-exercise4.html">Types of Lists</a></li>
+                       <li> <a href="../html-exercises/htm-exercise5.html">Marquee tag</a></li>
+                       <li> <a href="../html-exercises/htm-exercise6.html">Details Tag</a></li></ul>
+       <a href="../html-exercises/htm-exerciselist.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+                    <div id="cssexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="../css-exercises/css-exercise1.html">Gradient with divs</a></li>
+                       <li> <a href="../css-exercises/css-exercise6.html">Name Card</a></li>
+                       <li> <a href="../css-exercises/css-exercise13.html">Text Editing</a></li>
+                       <li> <a href="../css-exercises/css-exercise15.html">Menu Bar</a></li>
+                       <li> <a href="../css-exercises/css-exercise23.html">Bakcground Image</a></li>
+                       <li> <a href="../css-exercises/css-exercise26.html">Text Shadow</a></li></ul>
+       <a href="../css-exercises/css-exercise1.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+                    <div id="jsexercontent" class="exercontents-dropdown">
+                        <ul>
+                       <li> <a href="../js-exercises/js-exercise1.html">Convert Temperature</a></li>
+                        <li><a href="../js-exercises/js-exercise2.html">Area of rectangle</a></li>
+                       <li> <a href="../js-exercises/js-exercise3.html">Check Leap Year</a></li>
+                       <li> <a href="../js-exercises/js-exercise4.html">Calculate days</a></li>
+                       <li> <a href="../js-exercises/js-exercise5.html">Get Website URL</a></li>
+                       <li> <a href="../js-exercises/js-exercise6.html">Compute Sum/Triple Sum</a></li></ul>
+       <a href="../js-exercises/js-exerciselist.html" class="home-course-button"> View all <img src="../../images/Double Right icon.svg" alt=""></a>
+    
+                    </div>
+    
+                    
+                </div>
+    
+    </div>
         <div class="jsblob1"><img src="../../images/jstut-blob.svg" alt=""></div>
         <div class="jsblob2"><img src="../../images/jstut-blob2.svg" alt=""></div>
         <div class="tutorial-banner-top desktop-tutorial">
-            <img src="../../images/js-logo.svg" alt=""> 
+            <img src="../../images/html-blob.svg" alt=""> 
             <div class="tutorial-banner-text">
-                <p class="medium-heading">Learn JavaScript Programming</p>
+                <p class="medium-heading">Learn HTML Language</p>
                 <div class="sub-nav">
-                    <a href="#" class="active"><i class='bx bx-md bx-book-bookmark'></i>Tutorials</a>
-                    <a href="../js-exercises/js-exerciselist.html"><i class='bx bx-md bx-edit'></i>Exercises</a>
-                    <a href="../js-exercises/js-exercise1.html"><i class='bx bx-md bx-code-block'></i>Code Editor</a>
-                    <a href="../js-games/js-games-list.html"><i class='bx bx-md bx-game'></i>Games</a>
+                    <a href="htm-tut0.html" class="active"><i class='bx bx-md bx-book-bookmark'></i>Tutorials</a>
+                    <a href="../html-exercises/htm-exerciselist.html"><i class='bx bx-md bx-edit'></i>Exercises</a>
+                    <a href="../html-exercises/htm-exercise1.html"><i class='bx bx-md bx-code-block'></i>Code Editor</a>
+                    <a href="https://www.youtube.com/@analyzecode"><i class='bx bx-play'></i>Videos</a>
+    
                 </div>
                 <img src="../../images/blue-underline.svg" class="blue-underline" alt="">
-                <p class="lang-defination">A scripting language that enables you to create dynamically updating content,
-                    control multimedia, animate images, and pretty much everything else.
+                <p class="lang-defination">Used for creating webpages that contains texts, graphics, multimedia etc. Learn various tags, attributes that help you in web-development.
                 </p>
             </div>
             </div>
             <div class="tutorial-banner-top mobile-banner" style="display:none;">
                     <div class="tutorial-banner-text">
-                        <img src="../../images/js-logo.svg" alt="">
-                        <p class="medium-heading">Learn JavaScript Programming</p>
+                        <img src="../../images/html-blob.svg" alt="">
+                        <p class="medium-heading">Learn HTML Language</p>
                     </div>
                     <div class="sub-nav">
-                        <a href="#" class="active"><i class='bx bx-md bx-book-bookmark'></i>Tutorials</a>
-                        <a href="../js-exercises/js-exerciselist.html"><i class='bx bx-md bx-edit'></i>Exercises</a>
+                        <a href="htm-tut0.html" class="active"><i class='bx bx-md bx-book-bookmark'></i>Tutorials</a>
+                        <a href="../html-exercises/htm-exerciselist.html"><i class='bx bx-md bx-edit'></i>Exercises</a>
                         </div>
                     <div class="sub-nav">
-                        <a href="../js-exercises/js-exercise1.html"><i class='bx bx-md bx-code-block'></i>Code Editor</a>
-                        <a href="../js-games/js-games-list.html"><i class='bx bx-md bx-game'></i>Games</a>
+                        <a href="../html-exercises/htm-exercise1.html"><i class='bx bx-md bx-code-block'></i>Code Editor</a>
+                        <a href="https://www.youtube.com/@analyzecode"><i class='bx bx-play'></i>Videos</a>
                     </div>
                 <img src="../../images/blue-underline.svg" class="blue-underline" alt="">
                <div class="tutorial-banner-text mobile">
-                <p class="lang-defination">A scripting language that enables you to create dynamically updating content,
-                    control multimedia, pretty much everything else.
-                </p>
-               </div>
+                <p class="lang-defination">Used for creating webpages that contains texts, graphics, multimedia etc. Learn various tags, attributes that help you in web-development.
             </div>
+           
+    
     </section>
-    <section class="tut-content-block">
-        <div class="tut-content-sidebar">
-            <p class="tut-content-sidebar-heading">Page Index</p>
-            <details open>
-                <summary>JS Introduction <i class='bx bxs-chevron-down'></i></summary>
-                <ul>
-                    <li><a class="tutitemactive" href="js-tut0.html">Getting Started</a></li>
-                    <li><a href="jstut1.html">Ways to execute</a></li>
-                    <li><a href="js-tut1b.html">JS Variables</a></li>
-                    <li><a href="js-tut1c.html">JS Let & Constant</a></li>
-                    <li><a href="js-tut1d.html">JS console.log</a></li>
-                    <li><a href="js-tut1e.html">JS Data types</a></li>
-                    <li><a href="js-tut1f.html">JS Operators</a></li>
-                    <li><a href="js-tut1g.html">JS Type conversions</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>JS Control flow <i class='bx bxs-chevron-down'></i></summary>
-                <ul>
-                    <li><a href="js-tut2a.html" >JS Comparison Operators</a></li>
-                    <li><a href="js-tut2b.html" >JS If else Statement</a></li>
-                    <li><a href="js-tut2c.html" >JS For loop Statement</a></li>
-                    <li><a href="js-tut2d.html" >JS While Statement</a></li>
-                    <li><a href="js-tut2e.html" >JS Break Statement</a></li>
-                    <li><a href="js-tut2f.html" >JS Continue Statement</a></li>
-                    <li><a href="js-tut2g.html" >JS Switch Statement</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>JS Functions <i class='bx bxs-chevron-down'></i></summary>
-                <ul>
-                    <li><a href="js-tut3a.html" >JS Functions</a></li>
-                    <li><a href="js-tut3b.html" >Variable Scope</a></li>
-                    <li><a href="js-tut3c.html" >JavaScript hoisting</a></li>
-                    <li><a href="js-tut3d.html" >JavaScript Recursion</a></li>
-                    <li><a href="js-tut3e.html" >JS Operators</a></li>
-                    <li><a href="js-tut3f.html" >JS Type conversions</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>JS Objects <i class='bx bxs-chevron-down'></i></summary>
-                <ul>
-                    <li><a href="js-tut4a.html" >Object Definations</a></li>
-                    <li><a href="js-tut4b.html" >Object Properties</a></li>
-                    <li><a href="js-tut4c.html" >Object Methods</a></li>
-                    <li><a href="js-tut4d.html" >Object Display</a></li>
-                    <li><a href="js-tut4e.html" >Object Accessors</a></li>
-                    <li><a href="js-tut4f.html" >Object Constructors</a></li>
-                    <li><a href="js-tut4g" >Object Prototypes</a></li>
-                    <li><a href="js-tut4h" >Object Iterables</a></li>
-                    <li><a href="js-tut4i" >Object Sets</a></li>
-                    <li><a href="js-tut4j" >Object Maps</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>JS Types <i class='bx bxs-chevron-down'></i></summary>
-                <ul>
-                    <li><a href="js-tut5a" >JavaScript Array</a></li>
-                    <li><a href="js-tut5b" >JS Multidimensional Array</a></li>
-                    <li><a href="js-tut5c" >JavaScript String</a></li>
-                    <li><a href="js-tut5d" >JS for in loop</a></li>
-                    <li><a href="js-tut5e" >JavaScript Number</a></li>
-                    <li><a href="js-tut5f" >JavaScript Symbol</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Exceptions and Modules <i class='bx bxs-chevron-down'></i></summary>
-                <ul>
-                    <li><a href="js-tut6a" >JavaScript try...catch...finally</a></li>
-                    <li><a href="js-tut6b" >JavaScript throw Statement</a></li>
-                    <li><a href="js-tut6c" >JS Modules</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>JS ES6 <i class='bx bxs-chevron-down'></i></summary>
-                <ul>
-                    <li><a href="js-tut7a" >JavaScript ES6</a></li>
-                    <li><a href="js-tut7b" >JavaScript Arrow Function</a></li>
-                    <li><a href="js-tut7c" >JavaScript Default Parameters</a></li>
-                    <li><a href="js-tut7d" >JavaScript Template Literals</a></li>
-                    <li><a href="js-tut7e" >JavaScript Spread Operator</a></li>
-                    <li><a href="js-tut7f" >JavaScript Map</a></li>
-                    <li><a href="js-tut7g" >JavaScript Set</a></li>
-                    <li><a href="js-tut7h" >JavaScript Assignment</a></li>
-                    <li><a href="js-tut7i" >JavaScript Classes</a></li>
-                    <li><a href="js-tut7j" >JavaScript Inheritance</a></li>
-                    <li><a href="js-tut7k" >JavaScript for..of</a></li>
-                    <li><a href="js-tut7l" >JavaScript Proxies</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>JavaScript Asynchronous <i class='bx bxs-chevron-down'></i></summary>
-                <ul>
-                    <li><a href="js-tut8a" >JavaScript setTimeout()</a></li>
-                    <li><a href="js-tut8b" >JavaScript CallBack Function</a></li>
-                    <li><a href="js-tut8c" >JavaScript Promise</a></li>
-                    <li><a href="js-tut8d" >JavaScript async/await</a></li>
-                    <li><a href="js-tut8e" >JavaScript setInterval()</a></li>
-                </ul>
-            </details>
-            <details>
-                <summary>Miscellaneous <i class='bx bxs-chevron-down'></i></summary>
-                <ul>
-                    <li><a class="js-tut9a" >JavaScript JSON</a></li>
-                    <li><a class="js-tut9b" >JavaScript Date and Time</a></li>
-                    <li><a class="js-tut9c" >JavaScript Closure</a></li>
-                    <li><a class="js-tut9d" >JavaScript this</a></li>
-                    <li><a class="js-tut9e" >JavaScript 'use strict'</a></li>
-                    <li><a class="js-tut9f" >Iterators and Iterables</a></li>
-                    <li><a class="js-tut9g" >JavaScript Generators</a></li>
-                    <li><a class="js-tut9h" >JavaScript Regular Expressions</a></li>
-                    <li><a class="js-tut9i" >JavaScript Browser Debugging</a></li>
+   <a href="#"> <i class='bx bx-md bxs-chevron-up gotoup'></i></a>
+    <section class="tut-content-block" id="tutContentBlock">
+       <div class="tut-content-sidebar">
+        <p class="tut-content-sidebar-heading">Page Index</p>
+        <details class="sidebarDetail" open>
+            <summary>HTML Introduction <i class='bx bxs-chevron-down'></i></summary>
+            <ul>
+                <li><a href="htm-tut0.html" class="tutitemactive"><i class="fa-regular fa-circle-check"></i>Getting Started</a></li>
+                <li><a href="htm-tut1.html" ><i class="fa-regular fa-circle-check"></i>HTML Elements</a></li>
+                <li><a href="htm-tut2.html" ><i class="fa-regular fa-circle-check"></i>HTML Attributes</a></li>
+                <li><a href="htm-tut3.html" ><i class="fa-regular fa-circle-check"></i>HTML Headings</a></li>
+                <li><a href="htm-tut4.html" ><i class="fa-regular fa-circle-check"></i>HTML Comments</a></li>
+                <li><a href="htm-tut5.html" ><i class="fa-regular fa-circle-check"></i>HTML Block & Inline</a></li>
 
-                </ul>
+           </ul>
             </details>
-        </div>
+            <details class="sidebarDetail">
+                <summary>Tags Reference <i class='bx bxs-chevron-down'></i></summary>
+                <ul>
+                    <li><a href="htm-tut6.html" ><i class="fa-regular fa-circle-check"></i>HTML Images</a></li>
+                    <li><a href="htm-tut7.html" ><i class="fa-regular fa-circle-check"></i>HTML Links</a></li>
+                    <li><a href="htm-tut8.html" ><i class="fa-regular fa-circle-check"></i>HTML Tables</a></li>
+                    <li><a href="htm-tut9.html" ><i class="fa-regular fa-circle-check"></i>HTML Lists</a></li>
+                    
+               </ul>
+                </details> 
+               
+       
+
+
+
+       </div>
         <div class="tut-content-show-content">
-            <p class="medium-heading">Getting Started With JavaScript</p>
-            <p class="tutcontent-subheading">
-                In this tutorial, you will learn about different ways to run JavaScript on your computer.
-
-            </p>
-            
-            <p class="tutcontent-subheading">Now that you know how to run JavaScript, let's start learning the
-                fundamentals of JavaScript from the next tutorial.</p>
-            <img src="../../images/hrline.svg" class="hr-line" id="hr-line" alt="">
-            <div class="exnextbtns">
-                <a href="#" class="previous-page-btn"></a>
-                <a href="js-tut1b.html" class="next-page-btn">
+            <p class="medium-heading">Getting Started With HTML</p>
+           <ul>
+            <li>
+                <p class="tutcontent-description">HTML stands for Hyper Text Markup Language.</p>
+            </li>
+            <li>
+                <p class="tutcontent-description">HTML is the standard markup language for creating Web pages.</p>
+            </li>
+            <li>
+                <p class="tutcontent-description">HTML describes the structure of a Web page.</p>
+            </li>
+            <li>
+                <p class="tutcontent-description">HTML consists of a series of elements also called tags.</p>
+            </li>
+            <li>
+                <p class="tutcontent-description">HTML tags tell the browser how to display the content.</p>
+            </li>
+            <li>
+                <p class="tutcontent-description"> HTML tags label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+            </li>
+           </ul>
+            <p class="tutcontent-description">Now that you know what is html, let's learn start elements ie. tags in html</p>
+            <hr class="hr-line">
+            <div class="exnextbtns ftut1">
+                <a href="htm-tut0.html" class="previous-page-btn" style="display: none;">
+</a>
+                <a href="htm-tut1.html" class="next-page-btn">
                     <div class="pagination-turnover">
                         <p class="pagination-text">Next : </p>
-                        <p class="nextpage-topic">JS Variables</p>
+                        <p class="nextpage-topic">HTML Elements</p>
                     </div>
                     <i class='bx bx-md bx bx-right-arrow-alt bx-fade-right-hover' id="arrow-right"></i>
                 </a>
             </div>
-            <!-- <div class="vote-article">
-            <p class="tutcontent-subheading">Did you find this article useful?</p>
-        </div> -->
-        </div>
-
+            <p class="tutcontent-subheading">Share this page on : </p>
+            <div class="social-share">
+                <a target="_blank" class="faceBookBtn" href=""><img src="../../images/facebook-logo.svg" alt="">FaceBook</a>
+                <a target="_blank" class="whatsappShareBtn" href=""><img src="../../images/whatsapp-logo.svg" alt="">Whatsapp</a>
+                <a target="_blank" class="tweetBtn" href=""><img src="../../images/twitter-logo.svg" alt="">Twitter</a>
+            </div>
+           
         </div>
     </section>
-    <footer>
-        <div class="footer-l-block">
-            <a href="../../index.html">
-                <div class="logo">
-                    <img src="../../images/site-logo.svg" alt="">
-                    <span class="logo-text">Analyze Code</span>
-                </div>
-            </a>
-            <p class="follow-us-heading">Follow us @ <span> #analyzecode</span></p>
-            <div class="social-links-container">
-              <a href="https://www.facebook.com/AnalyzeCode-101686752598768">  <i class='bx bx-md bxl-facebook-square'></i></a>
-              <a href="https://www.instagram.com/tech_array/">  <i class='bx bx-md bxl-instagram-alt' ></i></a>
-              <a href="https://twitter.com/AnalyzeCode">  <i class='bx bx-md bxl-twitter' ></i></a>
-              <a href="https://github.com/aryan-angra">  <i class='bx bx-md bxl-github' ></i></a>
-            </div>
-        </div>
-        <div class="footer-s-block">
-            <p class="heading">Help</p>
-            <ul>
-                <li><a href="../support.html">Support</a> </li>
-                <li><a href="../faqs.html">FAQs</a> </li>
-                <li><a href="../terms-conditions.html">Terms and conditions</a> </li>
-                <li><a href="../privacy-policy.html">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="footer-s-block">
-            <div class="heading">Company</div>
-            <ul>
-                <li><a href="../aboutus.html">About us</a></li>
-                <li><a href="../contactus.html">Contact us</a></li>
-            </ul>
-        </div>
-        <div class="footer-l-block subscribe">
-            <div class="heading">Subscribe to our news letter</div>
-            <form action="">
-                <input type="email" name="" id="">
-                <input type="submit" value="SUBSCRIBE">
-            </form>
-        </div>
-    </footer>
-    <p class="copyright-statement">© 2022 analyzecode.com All rights reserved.</p>
+    <div class="footer"></div>
+    <p class="copyright-statement">© 2022 AnalyzeCode.com All rights reserved.</p>
 </body>
+<script src="htm-tut-script.js"></script>
+<script>
+    let whatsappShareBtn = document.querySelector("a.whatsappShareBtn");
+// whatsappShareBtn.href = "whatsapp://send?text=" + document.URL;
+whatsappShareBtn.href = "https://api.whatsapp.com//send?text=Check+this+awesome+article+on+"+document.title+"%20"+document.URL;
+let tweetBtn = document.querySelector("a.tweetBtn");
+tweetBtn.href= "https://twitter.com/intent/tweet?url="+document.URL;
+let faceBookBtn = document.querySelector("a.faceBookBtn");
+faceBookBtn.href = "http://www.facebook.com/share.php?u="+document.URL;
+
+</script>
 <script src="../../script.js"></script>
 <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 </html>

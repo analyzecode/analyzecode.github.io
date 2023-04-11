@@ -6,11 +6,11 @@ footer = document.querySelector(".footer"),
 countbtn = document.querySelector(".countme");
 let btncount = document.querySelector(".count");
 let count = 0;
-fetch('plsqltoparea.html')
-.then(component => component.text())
-.then(data=>{
-landingpage.innerHTML =data
-});
+// fetch('plsqltoparea.html')
+// .then(component => component.text())
+// .then(data=>{
+// landingpage.innerHTML =data
+// });
 // fetch('sharePool.html')
 // .then(component => component.text())
 // .then(data=>{
@@ -40,3 +40,9 @@ if (this.open) {
  });
 }
 }
+
+
+
+
+
+   

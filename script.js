@@ -146,3 +146,9 @@ jsexer.addEventListener("click", () => {
     jsexercontent.setAttribute("style","display:block;")
     
 });
+
+
+const searchbar = document.querySelector(".search-bar");
+searchbar.addEventListener("click",()=>{
+    alert("searching feature is under development phase")
+})
