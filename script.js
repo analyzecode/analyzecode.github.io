@@ -24,6 +24,7 @@ const csstut = document.querySelector("#csstut");
 const jstut = document.querySelector("#jstut");
 const dbmstut = document.querySelector("#dbmstut");
 const plsqltut = document.querySelector("#plsqltut");
+const phptut = document.querySelector("#phptut");
 
 // content of tutorial->
 const htmtutcontent  = document.querySelector("#htmtutcontent");
@@ -31,6 +32,7 @@ const csstutcontent = document.querySelector("#csstutcontent");
 const jstutcontent = document.querySelector("#jstutcontent");
 const dbmstutcontent = document.querySelector("#dbmstutcontent");
 const plsqltutcontent = document.querySelector("#plsqltutcontent");
+const phptutcontent = document.querySelector("#phptutcontent");
 
 // for tutorial dropdown
 // default ->
@@ -44,11 +46,15 @@ htmtut.addEventListener("click", () => {
     jstut.classList.remove("active");
     dbmstut.classList.remove("active");
     plsqltut.classList.remove("active");
+    phptut.classList.remove("active")
+
     htmtutcontent.setAttribute("style","display:block;")
     csstutcontent.setAttribute("style","display:none;")
     jstutcontent.setAttribute("style","display:none;")
     dbmstutcontent.setAttribute("style","display:none;")
     plsqltutcontent.setAttribute("style","display:none;")
+    phptutcontent.setAttribute("style","display:none;")
+
 });
 csstut.addEventListener("click", () => {
     htmtut.classList.remove("active");
@@ -56,11 +62,15 @@ csstut.addEventListener("click", () => {
     jstut.classList.remove("active");
     dbmstut.classList.remove("active");
     plsqltut.classList.remove("active");
+    phptut.classList.remove("active")
+
     htmtutcontent.setAttribute("style","display:none;")
     csstutcontent.setAttribute("style","display:block;")
     jstutcontent.setAttribute("style","display:none;")
     dbmstutcontent.setAttribute("style","display:none;")
     plsqltutcontent.setAttribute("style","display:none;")
+    phptutcontent.setAttribute("style","display:none;")
+
 });
 jstut.addEventListener("click", () => {
 
@@ -69,11 +79,15 @@ jstut.addEventListener("click", () => {
     jstut.classList.add("active");
     dbmstut.classList.remove("active");
     plsqltut.classList.remove("active");
+    phptut.classList.remove("active")
+
     htmtutcontent.setAttribute("style","display:none;")
     csstutcontent.setAttribute("style","display:none;")
     jstutcontent.setAttribute("style","display:block;")
     dbmstutcontent.setAttribute("style","display:none;")
     plsqltutcontent.setAttribute("style","display:none;")
+    phptutcontent.setAttribute("style","display:none;")
+
 });
 dbmstut.addEventListener("click", () => {
 
@@ -82,27 +96,47 @@ dbmstut.addEventListener("click", () => {
     jstut.classList.remove("active");
     dbmstut.classList.add("active");
     plsqltut.classList.remove("active");
+    phptut.classList.remove("active")
     htmtutcontent.setAttribute("style","display:none;")
     csstutcontent.setAttribute("style","display:none;")
     jstutcontent.setAttribute("style","display:none;")
     dbmstutcontent.setAttribute("style","display:block;")
     plsqltutcontent.setAttribute("style","display:none;")
+    phptutcontent.setAttribute("style","display:none;")
+
 });
 plsqltut.addEventListener("click", () => {
     htmtut.classList.remove("active");
     csstut.classList.remove("active");
     jstut.classList.remove("active");
     dbmstut.classList.remove("active");
-    plsqltut.classList.add("active");
+    plsqltut.classList.add("active");   
+     phptut.classList.remove("active")
 
 
     htmtutcontent.setAttribute("style","display:none;")
     csstutcontent.setAttribute("style","display:none;")
     jstutcontent.setAttribute("style","display:none;")
     dbmstutcontent.setAttribute("style","display:none;")
-    plsqltutcontent.setAttribute("style","display:block;")
+    plsqltutcontent.setAttribute("style","display:block;")   
+     phptutcontent.setAttribute("style","display:none;")
 });
+phptut.addEventListener("click", () => {
+    htmtut.classList.remove("active");
+    csstut.classList.remove("active");
+    jstut.classList.remove("active");
+    dbmstut.classList.remove("active");
+    plsqltut.classList.remove("active");
+    phptut.classList.add("active")
 
+
+    htmtutcontent.setAttribute("style","display:none;")
+    csstutcontent.setAttribute("style","display:none;")
+    jstutcontent.setAttribute("style","display:none;")
+    dbmstutcontent.setAttribute("style","display:none;")
+    plsqltutcontent.setAttribute("style","display:none;")
+    phptutcontent.setAttribute("style","display:block;")
+});
 
 // for exercises dropdown
 
@@ -146,7 +180,6 @@ jsexer.addEventListener("click", () => {
     jsexercontent.setAttribute("style","display:block;")
     
 });
-
 
 const searchbar = document.querySelector(".search-bar");
 searchbar.addEventListener("click",()=>{
