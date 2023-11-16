@@ -143,11 +143,13 @@ phptut.addEventListener("click", () => {
 const htmexer  = document.querySelector("#htmexer");
 const cssexer = document.querySelector("#cssexer");
 const jsexer = document.querySelector("#jsexer");
+const javaexer = document.querySelector("#javaexer");
 
 // content of tutorial->
 const htmexercontent  = document.querySelector("#htmexercontent");
-const csexercontent = document.querySelector("#cssexercontent");
+const cssexercontent = document.querySelector("#cssexercontent");
 const jsexercontent = document.querySelector("#jsexercontent");
+const javaexercontent = document.querySelector("#javaexercontent");
 // for tutorial dropdown
 // default ->
 htmexercontent.setAttribute("style","display:block;")
@@ -158,29 +160,46 @@ htmexer.addEventListener("click", () => {
     htmexer.classList.add("active");
     cssexer.classList.remove("active");
     jsexer.classList.remove("active");
+    javaexer.classList.remove("active");
     htmexercontent.setAttribute("style","display:block;")
     cssexercontent.setAttribute("style","display:none;")
     jsexercontent.setAttribute("style","display:none;")
+    javaexercontent.setAttribute("style","display:none;")
 });
 cssexer.addEventListener("click", () => {
     htmexer.classList.remove("active");
     cssexer.classList.add("active");
     jsexer.classList.remove("active");
+            javaexer.classList.remove("active");
     htmexercontent.setAttribute("style","display:none;")
     cssexercontent.setAttribute("style","display:block;")
     jsexercontent.setAttribute("style","display:none;")
+            javaexercontent.setAttribute("style","display:none;")
 });
 jsexer.addEventListener("click", () => {
 
     htmexer.classList.remove("active");
     cssexer.classList.remove("active");
     jsexer.classList.add("active");
+        javaexer.classList.remove("active");
     htmexercontent.setAttribute("style","display:none;")
     cssexercontent.setAttribute("style","display:none;")
     jsexercontent.setAttribute("style","display:block;")
+        javaexercontent.setAttribute("style","display:none;")
     
 });
+javaexer.addEventListener("click", () => {
 
+    htmexer.classList.remove("active");
+    cssexer.classList.remove("active");
+    jsexer.classList.remove("active");
+    javaexer.classList.add("active");
+    htmexercontent.setAttribute("style","display:none;")
+    cssexercontent.setAttribute("style","display:none;")
+    jsexercontent.setAttribute("style","display:none;")
+    javaexercontent.setAttribute("style","display:block;")
+    
+});
 const searchbar = document.querySelector(".search-bar");
 searchbar.addEventListener("click",()=>{
     alert("searching feature is under development phase")

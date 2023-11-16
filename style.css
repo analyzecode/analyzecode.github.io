@@ -769,7 +769,134 @@ ol.qna-container li p.tutcontent-description{
     .exnextbtns.ftut1{
         justify-content: center;
     }
-    
+
+    iframe.javaContainer{
+        width: 90%;
+        height: 600px;
+        margin: 2% 5%;
+    }
+  
+.javaSearchBar{
+    border: 1px solid #aeaeae;
+    /* padding: 1% 2%; */
+    border-radius: 6px;
+    width: 80%;
+    margin: 2% 10%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+   
+}    
+.javaSearchBar input{
+    border: none;
+    outline: none;
+    padding: 1% 0;
+    font-size: 1.2rem;
+}
+.javaSearchBar i{
+    padding: 1%;
+    margin-left: 3%;
+    background-color: #fff;
+    color: #0556F3;
+}
+
+
+ol#programList{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 2% auto;
+}
+ol#programList li{
+    font-size: 1.2rem;
+    margin: 1% 0;
+    cursor: pointer;
+}
+ol#programList li:hover{
+    color: #0556F3;
+}
+.codeContainerJava{
+    padding: 2% 10%;
+}
+.codeContainerJava p.small-heading{
+    margin: 2% 0;
+
+}
+.topicNav{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: -5%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .topicNav a {
+        flex: 1;
+        max-width: 35%; 
+        text-align: center; 
+        padding: 1%; 
+        text-decoration: none;
+        font-weight: 500;
+        margin: 1%;
+        color: #25265E;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+      }
+      .topicNav a:hover{
+        background-color: #0556F3;
+        color: #fff;
+        transition: all .3s ease-in-out;
+      }
+i.gotop{
+    position: absolute;
+    bottom: 10%;
+    display: block;
+    right: 5%;
+    background-color: #0556F3;
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* padding: 2%; */
+    cursor: pointer;
+}
+.codeContainerJava #codeDiv, .codeContainerJava #outputDiv{
+    background-color: #000;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 2%;
+    line-height: 38px;
+    font-family: "consolas";
+    overflow-x: scroll;
+}
+button#copyButton{
+    background-color: #0556f3;
+    border-radius: 6px;
+    color: #fff;
+    padding: 1% 2%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 2% 0;
+}
+span.colorGreen{
+    color: rgb(17, 225, 17);
+}
+.codeDiv pre, .outputDiv pre{
+    overflow-x: scroll;
+}
+a.button-anchor{
+    text-decoration: none;
+     border: 1px solid #ccc;
+     width: fit-content; 
+    padding: 1%; 
+    display: inline-block; 
+    margin: 2% 0;
+    font-weight: 500;
+    color: #000;
+}
     .next-page-btn, .previous-page-btn{
         display: flex;
         width: 40%;
@@ -1255,7 +1382,18 @@ text-align: center;
    background-color: #0042c6;
     
 }
-
+a.javaHeadline{
+    background-color: #e6eeff;
+    color: #0556F3;
+    width: fit-content;
+    padding: 1% 2%;
+    font-size: 1rem;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    margin:  0 auto;
+    text-decoration: none;
+}
 
 
 
@@ -1330,6 +1468,9 @@ text-align: center;
     }
    .countme{
     width: 50%;
+   }
+   .codeContainerJava #codeDiv, .codeContainerJava #outputDiv{
+    overflow: scroll;
    }
     .tutcontent-description{
         font-size: 1.17rem;
