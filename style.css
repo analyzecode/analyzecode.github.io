@@ -826,7 +826,7 @@ ol#programList li:hover{
 .topicNav{
         width: 90%;
         margin: 0 auto;
-        margin-top: -5%;
+        margin-top: 3%;
         display: flex;
         flex-wrap: wrap;
       }
@@ -843,8 +843,13 @@ ol#programList li:hover{
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 
       }
-      .topicNav a:hover{
+     .topicNav a.activeJavaTopic{
         background-color: #0556F3;
+        color: #fff;
+        transition: all .3s ease-in-out;
+      }
+      .topicNav a:hover{
+        background-color: #4a7adb;
         color: #fff;
         transition: all .3s ease-in-out;
       }
@@ -1393,6 +1398,7 @@ a.javaHeadline{
     align-items: center;
     margin:  0 auto;
     text-decoration: none;
+    margin-top: -3%;
 }
 
 

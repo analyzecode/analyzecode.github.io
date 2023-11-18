@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Programs</title>
+        <meta name="keywords" content="Java Programs">
+        <meta name="description" content="free java progrsmd for beginners step by step">
+        <link rel="stylesheet" href="../../../style.css">
+        <link rel="icon" href="../../../images/site-logo.svg" type="image/x-icon">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <div class="codeContainerJava">
+    <div id="codeDiv"></div>
+    <button id="copyButton">Copy Code</button>
+
+    <div id="outputDiv"></div>
+    <a href="exceptionHandling.html" class="tutcontent-subheading javaHeadline" style="margin-top: 3%;"><i class='bx bx-sm bxs-left-arrow-alt' style="margin-left: 9px;"></i> Go back to programs list</a>
+
+</div>
+    <script>
+        // Function to display code and output
+        function displayProgramDetails(program) {
+            const codeDiv = document.getElementById('codeDiv');
+            const outputDiv = document.getElementById('outputDiv');
+    
+            codeDiv.innerHTML = `<pre>${program.code}</pre>`;
+            outputDiv.innerHTML = `<pre>${program.output}</pre>`;
+        }
+    
+        // Function to get the program index from the URL query parameter
+        function getProgramIndexFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return parseInt(urlParams.get('programIndex'));
+        }
+    
+        // Fetch and load the program details from the JSON file based on the program index
+        const programIndex = getProgramIndexFromURL();
+        fetch('exceptionHandling.json') 
+            .then(response => response.json())
+            .then(programs => {
+                if (programIndex >= 0 && programIndex < programs.length) {
+                    const selectedProgram = programs[programIndex];
+                    displayProgramDetails(selectedProgram);
+                }
+            })
+            .catch(error => console.error(error));
+
+
+
+            const copyButton = document.getElementById("copyButton");
+
+// Add a click event listener to the Copy button
+copyButton.addEventListener("click", function () {
+    // Create a range and select the content within the div
+    const range = document.createRange();
+    range.selectNode(codeDiv);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    // Copy the selected content to the clipboard
+    document.execCommand("copy");
+
+    // Deselect the text
+    window.getSelection().removeAllRanges();
+
+    // Notify the user that the content has been copied
+    alert("Content has been copied to the clipboard.");
+});
+    </script>
+</body>
+</html>

@@ -59,7 +59,7 @@
 
     // Function to redirect to the code page with the selected program index
     function redirectToCodePage(index) {
-        window.location.href = `twoDimensionalArrayCode.html?programIndex=${index}`;
+        window.location.href = `delegationEventModelCodes.html?programIndex=${index}`;
     }
 
     // Function to handle search input changes
@@ -72,7 +72,7 @@
     // Fetch and load the program list from the JSON file
     let programs = [];
 
-    fetch('twoDimensionalArrayprogs.json')
+    fetch('delegationEventModel.json')
         .then(response => response.json())
         .then(data => {
             // Assign index property to each program

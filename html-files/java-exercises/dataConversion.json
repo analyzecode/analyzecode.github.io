@@ -1,0 +1,152 @@
+[
+    {
+        "programName": "How to convert String to int",
+        "code": "<span class='colorGreen'>// How to convert String to int</span>\npublic class program1 {\n    public static void main(String[] args) {\n        // Example String\n        String strNumber = \"123\";\n\n        // Convert String to int using parseInt method\n        try {\n            int intValue = Integer.parseInt(strNumber);\n            System.out.println(\"Converted int value: \" + intValue);\n        } catch (NumberFormatException e) {\n            System.out.println(\"Error: The string is not a valid integer.\");\n        }\n    }\n}\n",
+        "output": "Converted int value: 123"
+    },
+    {
+        "programName": "How to convert int to String",
+        "code": "<span class='colorGreen'>// How to convert int to String</span>\npublic class program2 {\n    public static void main(String[] args) {\n        // Example int\n        int intValue = 123;\n\n        // Convert int to String using String.valueOf()\n        String strValue = String.valueOf(intValue);\n        \n        // Print the result\n        System.out.println(\"Converted String value: \" + strValue);\n    }\n}\n",
+        "output": "Converted String value: 123"
+    },
+    {
+        "programName": "How to convert String to long",
+        "code": "<span class='colorGreen'>// How to convert String to long</span>\npublic class program3 {\n    public static void main(String[] args) {\n        // Example String\n        String strNumber = \"1234567890123\";\n\n        try {\n            // Convert String to long using Long.parseLong()\n            long longValue = Long.parseLong(strNumber);\n            System.out.println(\"Converted long value: \" + longValue);\n        } catch (NumberFormatException e) {\n            System.out.println(\"Error: The string is not a valid long.\");\n        }\n    }\n}",
+        "output": "Converted long value: 1234567890123"
+    },
+    {
+        "programName": "How to convert long to String",
+        "code": "<span class='colorGreen'>// How to convert long to String</span>\npublic class program4 {\n    public static void main(String[] args) {\n        // Example long\n        long longValue = 1234567890123L;\n\n        // Convert long to String using String.valueOf()\n        String stringValue = String.valueOf(longValue);\n        \n        // Print the result\n        System.out.println(\"Converted String value: \" + stringValue);\n    }\n}\n",
+        "output": "Converted String value: 1234567890123"
+    },
+    {
+        "programName": "How to convert String to float",
+        "code": "<span class='colorGreen'>// How to convert String to float</span>\npublic class program5 {\n    public static void main(String[] args) {\n        String strNumber = \"123.45\";\n\n        try {\n            // Convert String to float using Float.parseFloat()\n            float floatValue = Float.parseFloat(strNumber);\n            System.out.println(\"Converted float value: \" + floatValue);\n        } catch (NumberFormatException e) {\n            System.out.println(\"Error: The string is not a valid float.\");\n        }\n    }\n}",
+        "output": "Converted float value: 123.45"
+    },
+    {
+        "programName": "How to convert float to String",
+        "code": "<span class='colorGreen'>// How to convert float to String</span>\npublic class program6 {\n    public static void main(String[] args) {\n        // Example float\n        float floatValue = 123.45f;\n\n        // Convert float to String using String.valueOf()\n        String stringValue = String.valueOf(floatValue);\n        \n        // Print the result\n        System.out.println(\"Converted String value: \" + stringValue);\n    }\n}\n",
+        "output": "Converted String value: 123.45"
+    },
+    {
+        "programName": "How to convert String to double",
+        "code": "<span class='colorGreen'>// How to convert String to double</span>\npublic class program7 {\n    public static void main(String[] args) {\n        // Example String\n        String strNumber = \"123.45\";\n\n        try {\n            // Convert String to double using Double.parseDouble()\n            double doubleValue = Double.parseDouble(strNumber);\n            System.out.println(\"Converted double value: \" + doubleValue);\n        } catch (NumberFormatException e) {\n            System.out.println(\"Error: The string is not a valid double.\");\n        }\n    }\n}\n",
+        "output": "Converted double value: 123.45"
+    },
+    {
+        "programName": "How to convert double to String",
+        "code": "<span class='colorGreen'>// How to convert double to String</span>\npublic class program8 {\n    public static void main(String[] args) {\n        // Example double\n        double doubleValue = 123.45;\n\n        // Convert double to String using String.valueOf()\n        String stringValue = String.valueOf(doubleValue);\n        \n        // Print the result\n        System.out.println(\"Converted String value: \" + stringValue);\n    }\n}\n",
+        "output": "Converted String value: 123.45"
+    },
+    {
+        "programName": "How to convert String to Date",
+        "code": "<span class='colorGreen'>// How to convert String to Date</span>\nimport java.text.ParseException;\nimport java.text.SimpleDateFormat;\nimport java.util.Date;\n\npublic class program9 {\n    public static void main(String[] args) {\n        // Example String representing a date\n        String dateString = \"2023-11-17\";\n\n        // Define the date format pattern\n        String dateFormatPattern = \"yyyy-MM-dd\";\n\n        try {\n            // Create a SimpleDateFormat object with the specified pattern\n            SimpleDateFormat dateFormat = new SimpleDateFormat(dateFormatPattern);\n\n            // Parse the String to obtain a Date object\n            Date dateValue = dateFormat.parse(dateString);\n\n            // Print the result\n            System.out.println(\"Converted Date value: \" + dateValue);\n        } catch (ParseException e) {\n            System.out.println(\"Error: The string is not a valid date with the specified format.\");\n            e.printStackTrace();\n        }\n    }\n}\n",
+        "output": "Converted Date value: Fri Nov 17 00:00:00 IST 2023"
+    },
+    {
+        "programName": "How to convert Date to String",
+        "code": "<span class='colorGreen'>// How to convert Date to String</span>\nimport java.text.SimpleDateFormat;\nimport java.util.Date;\n\npublic class program10{\n    public static void main(String[] args) {\n        // Example Date\n        Date currentDate = new Date();\n\n        // Define the date format pattern\n        String dateFormatPattern = \"yyyy-MM-dd HH:mm:ss\"; // Customize the pattern as needed\n\n        // Create a SimpleDateFormat object with the specified pattern\n        SimpleDateFormat dateFormat = new SimpleDateFormat(dateFormatPattern);\n\n        // Format the Date to obtain a String representation\n        String dateString = dateFormat.format(currentDate);\n\n        // Print the result\n        System.out.println(\"Converted String value: \" + dateString);\n    }\n}\n",
+        "output": "Converted String value: 2023-11-17 17:40:07"
+    },
+    {
+        "programName": "How to convert String to char",
+        "code": "<span class='colorGreen'>// How to convert String to char</span>\npublic class program11 {\n    public static void main(String[] args) {\n        // Example String\n        String str = \"Hello\";\n\n        // Convert String to char\n        // Access the first character in the String\n        char firstChar = str.charAt(0);\n\n        // Print the result\n        System.out.println(\"Converted char value: \" + firstChar);\n    }\n}\n",
+        "output": "Converted char value: H"
+    },
+    {
+        "programName": "How to convert char to String",
+        "code": "<span class='colorGreen'>// How to convert char to String</span>\npublic class program12 {\n    public static void main(String[] args) {\n        // Example char\n        char myChar = 'A';\n\n        // Convert char to String using String.valueOf()\n        String myString = String.valueOf(myChar);\n\n        // Print the result\n        System.out.println(\"Converted String value: \" + myString);\n    }\n}\n",
+        "output": "Converted String value: A"
+    },
+    {
+        "programName": "How to convert String to Object",
+        "code": "<span class='colorGreen'>// How to convert String to Object</span>\npublic class program13 {\n    public static void main(String[] args) {\n        // Example String representing an integer\n        String stringValue = \"42\";\n\n        // Convert String to Integer object\n        try {\n            Object myObject = Integer.valueOf(stringValue);\n\n            // Print the result\n            System.out.println(\"Converted Object value: \" + myObject);\n        } catch (NumberFormatException e) {\n            System.out.println(\"Error: The string is not a valid representation of the object.\");\n        }\n    }\n}\n",
+        "output": "Converted Object value: 42"
+    },
+    {
+        "programName": "How to convert Object to String",
+        "code": "<span class='colorGreen'>// How to convert Object to String</span>\npublic class program14 {\n    public static void main(String[] args) {\n        // Example Object\n        Object myObject = new CustomObject(\"Hello\");\n\n        // Convert Object to String using toString()\n        String stringValue = myObject.toString();\n\n        // Print the result\n        System.out.println(\"Converted String value: \" + stringValue);\n    }\n}\n\n// CustomObject class with overridden toString() method\nclass CustomObject {\n    private String data;\n\n    public CustomObject(String data) {\n        this.data = data;\n    }\n\n    @Override\n    public String toString() {\n        return \"CustomObject[data=\" + data + \"]\";\n    }\n}\n",
+        "output": "Converted String value: CustomObject[data=Hello]"
+    },
+    {
+        "programName": " How to convert int to long",
+        "code": "<span class='colorGreen'>//  How to convert int to long</span>\npublic class program15 {\n    public static void main(String[] args) {\n        // Example int\n        int intValue = 42;\n\n        // Convert int to long\n        long longValue = intValue;\n\n        // Print the result\n        System.out.println(\"Converted long value: \" + longValue);\n    }\n}",
+        "output": "Converted long value: 42"
+    },
+    {
+        "programName": "How to convert long to int",
+        "code": "<span class='colorGreen'>// How to convert long to int</span>\npublic class program16 {\n    public static void main(String[] args) {\n        // Example long\n        long longValue = 1234567890123L;\n\n        // Convert long to int using explicit casting\n        int intValue = (int) longValue;\n\n        // Print the result\n        System.out.println(\"Converted int value: \" + intValue);\n    }\n}",
+        "output": "Converted int value: 1912276171"
+    },
+    {
+        "programName": "How to convert int to double",
+        "code": "<span class='colorGreen'>// How to convert int to double</span>\npublic class program17 {\n    public static void main(String[] args) {\n        // Example int\n        int intValue = 42;\n\n        // Convert int to double (implicitly)\n        double doubleValue = intValue;\n\n        // Print the result\n        System.out.println(\"Converted double value: \" + doubleValue);\n    }\n}",
+        "output": "Converted double value: 42.0"
+    },
+    {
+        "programName": " How to convert double to int",
+        "code": "<span class='colorGreen'>//  How to convert double to int</span>\npublic class program18 {\n    public static void main(String[] args) {\n        // Example double\n        double doubleValue = 42.75;\n\n        // Convert double to int using explicit casting\n        int intValue = (int) doubleValue;\n\n        // Print the result\n        System.out.println(\"Converted int value: \" + intValue);\n    }\n}",
+        "output": "Converted int value: 42"
+    },
+    {
+        "programName": "How to convert char to int",
+        "code": "<span class='colorGreen'>// How to convert char to int</span>\npublic class program19 {\n    public static void main(String[] args) {\n        // Example char\n        char myChar = 'A';\n\n        // Convert char to int\n        int intValue = (int) myChar;\n\n        // Print the result\n        System.out.println(\"Converted int value: \" + intValue);\n    }\n}",
+        "output": "Converted int value: 65"
+    },
+    {
+        "programName": "How to convert int to char",
+        "code": "<span class='colorGreen'>// How to convert int to char</span>\npublic class program20 {\n    public static void main(String[] args) {\n        // Example int\n        int intValue = 65; // Unicode value for character 'A'\n\n        // Convert int to char using explicit casting\n        char charValue = (char) intValue;\n\n        // Print the result\n        System.out.println(\"Converted char value: \" + charValue);\n    }\n}\n",
+        "output": "Converted char value: A"
+    },
+    {
+        "programName": "How to convert String to boolean",
+        "code": "<span class='colorGreen'>// How to convert String to boolean</span>\npublic class program21 {\n    public static void main(String[] args) {\n        // Example String\n        String boolString = \"true\";\n\n        // Convert String to boolean using Boolean.parseBoolean()\n        boolean boolValue = Boolean.parseBoolean(boolString);\n\n        // Print the result\n        System.out.println(\"Converted boolean value: \" + boolValue);\n    }\n}\n",
+        "output": "Converted boolean value: true"
+    },
+    {
+        "programName": "How to convert boolean to String",
+        "code": "<span class='colorGreen'>// How to convert boolean to String</span>\npublic class program22 {\n    public static void main(String[] args) {\n        // Example boolean\n        boolean boolValue = true;\n\n        // Convert boolean to String using String.valueOf()\n        String stringValue = String.valueOf(boolValue);\n\n        // Print the result\n        System.out.println(\"Converted String value: \" + stringValue);\n    }\n}",
+        "output": "Converted String value: true"
+    },
+    {
+        "programName": "How to convert Date to Timestamp",
+        "code": "<span class='colorGreen'>// How to convert Date to Timestamp</span>\nimport java.sql.Timestamp;\nimport java.util.Date;\n\npublic class program23 {\n    public static void main(String[] args) {\n        // Example Date\n        Date date = new Date();\n\n        // Convert Date to Timestamp\n        Timestamp timestamp = new Timestamp(date.getTime());\n\n        // Print the result\n        System.out.println(\"Converted Timestamp value: \" + timestamp);\n    }\n}",
+        "output": "Converted Timestamp value: 2023-11-17 18:45:42.315"
+    },
+    {
+        "programName": "How to convert Timestamp to Date",
+        "code": "<span class='colorGreen'>// How to convert Timestamp to Date</span>\nimport java.sql.Timestamp;\nimport java.util.Date;\n\npublic class program24 {\n    public static void main(String[] args) {\n        // Example Timestamp\n        Timestamp timestamp = new Timestamp(System.currentTimeMillis());\n\n        // Convert Timestamp to Date using the Date constructor\n        Date date = new Date(timestamp.getTime());\n\n        // Print the result\n        System.out.println(\"Converted Date value: \" + date);\n    }\n}",
+        "output": "Converted Date value: Fri Nov 17 18:48:45 IST 2023"
+    },
+    {
+        "programName": " How to convert Binary to Decimal",
+        "code": "<span class='colorGreen'>//  How to convert Binary to Decimal</span>\npublic class program25 {\n    public static void main(String[] args) {\n        // Example binary number (as a String)\n        String binaryNumber = \"101010\";\n\n        // Convert binary to decimal\n        int decimalValue = binaryToDecimal(binaryNumber);\n\n        // Print the result\n        System.out.println(\"Converted decimal value: \" + decimalValue);\n    }\n\n    // Method to convert binary to decimal\n    private static int binaryToDecimal(String binary) {\n        int decimalValue = 0;\n\n        // Iterate over each bit in reverse order\n        for (int i = binary.length() - 1, j = 0; i >= 0; i--, j++) {\n            // Check if the bit is '1', add 2^j to the decimal value\n            if (binary.charAt(i) == '1') {\n                decimalValue += Math.pow(2, j);\n            }\n        }\n\n        return decimalValue;\n    }\n}",
+        "output": "Converted decimal value: 42"
+    },
+    {
+        "programName": "How to convert Decimal to Binary",
+        "code": "<span class='colorGreen'>// How to convert Decimal to Binary</span>\npublic class DecimalToBinaryExample {\n    public static void main(String[] args) {\n        // Example decimal number\n        int decimalNumber = 42;\n\n        // Convert decimal to binary\n        String binaryValue = decimalToBinary(decimalNumber);\n\n        // Print the result\n        System.out.println(\"Converted binary value: \" + binaryValue);\n    }\n\n    // Method to convert decimal to binary\n    private static String decimalToBinary(int decimal) {\n        if (decimal == 0) {\n            return \"0\";\n        }\n\n        StringBuilder binary = new StringBuilder();\n        while (decimal > 0) {\n            // Get the remainder when dividing by 2\n            int remainder = decimal % 2;\n            // Prepend the remainder to the binary string\n            binary.insert(0, remainder);\n            // Divide the decimal number by 2\n            decimal = decimal / 2;\n        }\n\n        return binary.toString();\n    }\n}        ",
+        "output": " Converted binary value: 101010"
+    },
+    {
+        "programName": " How to convert Hex to Decimal",
+        "code": "<span class='colorGreen'>//  How to convert Hex to Decimal</span>\npublic class program27 {\n    public static void main(String[] args) {\n        // Example hexadecimal number (as a String)\n        String hexNumber = \"1A\";\n\n        // Convert hex to decimal\n        int decimalValue = hexToDecimal(hexNumber);\n\n        // Print the result\n        System.out.println(\"Converted decimal value: \" + decimalValue);\n    }\n\n    // Method to convert hex to decimal\n    private static int hexToDecimal(String hex) {\n        // Parse the hexadecimal string and convert to decimal\n        return Integer.parseInt(hex, 16);\n    }\n}\n",
+        "output": "Converted decimal value: 26"
+    },
+    {
+        "programName": "How to convert Decimal to Hex",
+        "code": "<span class='colorGreen'>// How to convert Decimal to Hex</span>\npublic class program28 {\n    public static void main(String[] args) {\n        // Example decimal number\n        int decimalNumber = 42;\n\n        // Convert decimal to hex\n        String hexValue = decimalToHex(decimalNumber);\n\n        // Print the result\n        System.out.println(\"Converted hex value: \" + hexValue);\n    }\n\n    // Method to convert decimal to hex\n    private static String decimalToHex(int decimal) {\n        // Convert decimal to hex using Integer.toHexString\n        return Integer.toHexString(decimal);\n    }\n}\n",
+        "output": "Converted hex value: 2a"
+    },
+    {
+        "programName": "How to convert Octal to Decimal",
+        "code": "<span class='colorGreen'>// How to convert Octal to Decimal</span>\npublic class program29 {\n    public static void main(String[] args) {\n        // Example octal number (as a String)\n        String octalNumber = \"52\";\n\n        // Convert octal to decimal\n        int decimalValue = octalToDecimal(octalNumber);\n\n        // Print the result\n        System.out.println(\"Converted decimal value: \" + decimalValue);\n    }\n\n    // Method to convert octal to decimal\n    private static int octalToDecimal(String octal) {\n        // Parse the octal string and convert to decimal\n        return Integer.parseInt(octal, 8);\n    }\n}\n",
+        "output": "Converted decimal value: 42"
+    },
+    {
+        "programName": "How to convert Decimal to Octal",
+        "code": "<span class='colorGreen'>// How to convert Decimal to Octal</span>\npublic class program30 {\n    public static void main(String[] args) {\n        // Example decimal number\n        int decimalNumber = 42;\n\n        // Convert decimal to octal\n        String octalValue = decimalToOctal(decimalNumber);\n\n        // Print the result\n        System.out.println(\"Converted octal value: \" + octalValue);\n    }\n\n    // Method to convert decimal to octal\n    private static String decimalToOctal(int decimal) {\n        // Convert decimal to octal using Integer.toOctalString\n        return Integer.toOctalString(decimal);\n    }\n}\n",
+        "output": "Converted octal value: 52"
+    }
+]
