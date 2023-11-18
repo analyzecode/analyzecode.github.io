@@ -39,7 +39,7 @@
     
         // Fetch and load the program details from the JSON file based on the program index
         const programIndex = getProgramIndexFromURL();
-        fetch('guiAwt.json') 
+        fetch('inheritance.json') 
             .then(response => response.json())
             .then(programs => {
                 if (programIndex >= 0 && programIndex < programs.length) {

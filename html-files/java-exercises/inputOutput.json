@@ -1,0 +1,62 @@
+[
+    {
+       
+        "programName": "Enter the character from user using InputStreamReader   ",
+        "code": "<span class='colorGreen'>// Enter the character from user using InputStreamReader  </span>\nimport java.io.BufferedReader;nimport java.io.IOException;nimport java.io.InputStreamReader;nnpublic class ReadCharacterExample {n    public static void main(String[] args) {n        InputStreamReader isr = new InputStreamReader(System.in);n        BufferedReader br = new BufferedReader(isr);nn        System.out.println(\"Enter a character:\");nn        try {n            // Read a line of input and take the first charactern            char inputChar = br.readLine().charAt(0);nn            // Display the entered charactern            System.out.println(\"You entered: \" + inputChar);nn            // Close the BufferedReadern            br.close();n        } catch (IOException e) {n            e.printStackTrace();n        }n    }n}        ",
+        "output": "Enter a character:\n        G\n        You entered: G"
+    },
+    {
+       
+        "programName": "Enter the string from user using BufferedStreamReader",
+        "code": "<span class='colorGreen'>// Enter the string from user using BufferedStreamReader</span>\nimport java.io.BufferedReader;\nimport java.io.IOException;\nimport java.io.InputStreamReader;\n\npublic class ReadStringExample {\n    public static void main(String[] args) {\n        InputStreamReader isr = new InputStreamReader(System.in);\n        BufferedReader br = new BufferedReader(isr);\n\n        System.out.println(\"Enter a string:\");\n\n        try {\n            // Read a line of input\n            String inputString = br.readLine();\n\n            // Display the entered string\n            System.out.println(\"You entered: \" + inputString);\n\n            // Close the BufferedReader\n            br.close();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n}        ",
+        "output": "Enter a string:\n        Hello, World!\n        You entered: Hello, World!"
+    },
+    {
+       
+        "programName": "Enter the integer from user using Scanner class",
+        "code": "<span class='colorGreen'>// Enter the integer from user using Scanner class</span>\nimport java.util.Scanner;\n\npublic class ReadIntegerExample {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Enter an integer:\");\n\n        try {\n            // Read an integer from the user\n            int inputInteger = scanner.nextInt();\n\n            // Display the entered integer\n            System.out.println(\"You entered: \" + inputInteger);\n        } catch (java.util.InputMismatchException e) {\n            System.out.println(\"Invalid input. Please enter a valid integer.\");\n        } finally {\n            // Close the scanner\n            scanner.close();\n        }\n    }\n}        ",
+        "output": "Enter an integer:\n        42\n        You entered: 42\n        "
+    },
+    {
+       
+        "programName": " Enter the float from user using Scanner class",
+        "code": "<span class='colorGreen'>//  Enter the float from user using Scanner class</span>\nimport java.util.Scanner;\n\npublic class ReadFloatExample {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Enter a float:\");\n\n        try {\n            // Read a float from the user\n            float inputFloat = scanner.nextFloat();\n\n            // Display the entered float\n            System.out.println(\"You entered: \" + inputFloat);\n        } catch (java.util.InputMismatchException e) {\n            System.out.println(\"Invalid input. Please enter a valid float.\");\n        } finally {\n            // Close the scanner\n            scanner.close();\n        }\n    }\n}        ",
+        "output": "Enter a float:\n        3.14\n        You entered: 3.14\n        "
+    },
+    {
+       
+        "programName": "Enter the double from user using Scanner class",
+        "code": "<span class='colorGreen'>// Enter the double from user using Scanner class</span>\nimport java.util.Scanner;\n\npublic class ReadDoubleExample {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Enter a double:\");\n\n        try {\n            // Read a double from the user\n            double inputDouble = scanner.nextDouble();\n\n            // Display the entered double\n            System.out.println(\"You entered: \" + inputDouble);\n        } catch (java.util.InputMismatchException e) {\n            System.out.println(\"Invalid input. Please enter a valid double.\");\n        } finally {\n            // Close the scanner\n            scanner.close();\n        }\n    }\n}        ",
+        "output": "Enter a double:\n        3.14159\n        You entered: 3.14159\n        "
+    },
+    {
+       
+        "programName": "Enter the boolean from user using Scanner class",
+        "code": "<span class='colorGreen'>// Enter the boolean from user using Scanner class</span>\nimport java.util.Scanner;\n\npublic class ReadBooleanExample {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Enter a boolean (true or false):\");\n\n        try {\n            // Read a boolean from the user\n            boolean inputBoolean = scanner.nextBoolean();\n\n            // Display the entered boolean\n            System.out.println(\"You entered: \" + inputBoolean);\n        } catch (java.util.InputMismatchException e) {\n            System.out.println(\"Invalid input. Please enter 'true' or 'false'.\");\n        } finally {\n            // Close the scanner\n            scanner.close();\n        }\n    }\n}        ",
+        "output": "Enter a boolean (true or false):\n        true\n        You entered: true\n        "
+    },
+    {
+       
+        "programName": "Enter the short integer from user using Scanner class",
+        "code": "<span class='colorGreen'>// Enter the short integer from user using Scanner class</span>\nimport java.util.Scanner;\n\npublic class ReadShortExample {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Enter a short integer:\");\n\n        try {\n            // Read a short integer from the user\n            short inputShort = scanner.nextShort();\n\n            // Display the entered short integer\n            System.out.println(\"You entered: \" + inputShort);\n        } catch (java.util.InputMismatchException e) {\n            System.out.println(\"Invalid input. Please enter a valid short integer.\");\n        } finally {\n            // Close the scanner\n            scanner.close();\n        }\n    }\n}        ",
+        "output": "Enter a short integer:\n        12345\n        You entered: 12345"
+    },
+    {
+       
+        "programName": "Enter the long integer from user using Scanner class",
+        "code": "<span class='colorGreen'>// Enter the long integer from user using Scanner class</span>\nimport java.util.Scanner;\n\npublic class ReadLongExample {\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Enter a long integer:\");\n\n        try {\n            // Read a long integer from the user\n            long inputLong = scanner.nextLong();\n\n            // Display the entered long integer\n            System.out.println(\"You entered: \" + inputLong);\n        } catch (java.util.InputMismatchException e) {\n            System.out.println(\"Invalid input. Please enter a valid long integer.\");\n        } finally {\n            // Close the scanner\n            scanner.close();\n        }\n    }\n}        ",
+        "output": "Enter a long integer:\n        9876543210\n        You entered: 9876543210\n        "
+    },
+    {
+       
+        "programName": " Get all characters from the file and display on the screen",
+        "code": "<span class='colorGreen'>// </span>\nimport java.io.File;\nimport java.io.FileNotFoundException;\nimport java.util.Scanner;\n\npublic class ReadFileExample {\n    public static void main(String[] args) {\n        // Replace \"yourFileName.txt\" with the actual name of your file\n        String fileName = \"yourFileName.txt\";\n\n        try {\n            File file = new File(fileName);\n            Scanner scanner = new Scanner(file);\n\n            // Read and display all characters from the file\n            while (scanner.hasNext()) {\n                String line = scanner.nextLine();\n                System.out.println(line);\n            }\n\n            // Close the scanner\n            scanner.close();\n        } catch (FileNotFoundException e) {\n            System.out.println(\"File not found: \" + fileName);\n        }\n    }\n}        ",
+        "output": "Hello, this is line 1.\n        And this is line 2."
+    },
+    {
+       
+        "programName": "Get all characters from the file, count number of lines, words, characters and display on the screen",
+        "code": "<span class='colorGreen'>// Get all characters from the file, count number of lines, words, characters and display on the screen</span>\nimport java.io.File;\nimport java.io.FileNotFoundException;\nimport java.util.Scanner;\n\npublic class FileStatisticsExample {\n    public static void main(String[] args) {\n        // Replace \"yourFileName.txt\" with the actual name of your file\n        String fileName = \"yourFileName.txt\";\n\n        try {\n            File file = new File(fileName);\n            Scanner scanner = new Scanner(file);\n\n            int lineCount = 0;\n            int wordCount = 0;\n            int charCount = 0;\n\n            while (scanner.hasNextLine()) {\n                String line = scanner.nextLine();\n\n                // Count lines\n                lineCount++;\n\n                // Count words\n                String[] words = line.split(\"\\s+\");\n                wordCount += words.length;\n\n                // Count characters\n                charCount += line.length();\n            }\n\n            // Close the scanner\n            scanner.close();\n\n            // Display the counts\n            System.out.println(\"Number of lines: \" + lineCount);\n            System.out.println(\"Number of words: \" + wordCount);\n            System.out.println(\"Number of characters: \" + charCount);\n\n        } catch (FileNotFoundException e) {\n            System.out.println(\"File not found: \" + fileName);\n        }\n    }\n}        ",
+        "output": "Number of lines: 2\n        Number of words: 10\n        Number of characters: 43\n        "
+    }
+]

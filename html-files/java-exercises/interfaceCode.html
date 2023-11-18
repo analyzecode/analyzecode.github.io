@@ -18,7 +18,7 @@
     <button id="copyButton">Copy Code</button>
 
     <div id="outputDiv"></div>
-    <a href="guiAwt.html" class="tutcontent-subheading javaHeadline" style="margin-top: 3%;"><i class='bx bx-sm bxs-left-arrow-alt' style="margin-left: 9px;"></i> Go back to programs list</a>
+    <a href="interface.html" class="tutcontent-subheading javaHeadline" style="margin-top: 3%;"><i class='bx bx-sm bxs-left-arrow-alt' style="margin-left: 9px;"></i> Go back to programs list</a>
 
 </div>
     <script>
@@ -39,7 +39,7 @@
     
         // Fetch and load the program details from the JSON file based on the program index
         const programIndex = getProgramIndexFromURL();
-        fetch('guiAwt.json') 
+        fetch('interface.json') 
             .then(response => response.json())
             .then(programs => {
                 if (programIndex >= 0 && programIndex < programs.length) {

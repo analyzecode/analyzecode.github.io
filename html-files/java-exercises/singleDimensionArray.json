@@ -1,0 +1,39 @@
+[
+
+    {
+       
+        "programName": "Program to copy all elements of one array into another array",
+        "code": "<span class='colorGreen'>// Program to copy all elements of one array into another array</span>\npublic class ArrayCopyExample {\n    public static void main(String[] args) {\n        // Original array\n        int[] originalArray = {1, 2, 3, 4, 5};\n\n        // Create a new array with the same length as the original array\n        int[] copiedArray = new int[originalArray.length];\n\n        // Copy elements from the original array to the new array\n        for (int i = 0; i < originalArray.length; i++) {\n            copiedArray[i] = originalArray[i];\n        }\n\n        // Display original and copied arrays\n        System.out.println(\"Original Array: \" + arrayToString(originalArray));\n        System.out.println(\"Copied Array:   \" + arrayToString(copiedArray));\n    }\n\n    // Helper method to convert an array to a string\n    private static String arrayToString(int[] array) {\n        StringBuilder result = new StringBuilder(\"[\");\n        for (int i = 0; i < array.length; i++) {\n            result.append(array[i]);\n            if (i < array.length - 1) {\n                result.append(\", \");\n            }\n        }\n        result.append(\"]\");\n        return result.toString();\n    }\n}        ",
+        "output": "Original Array: [1, 2, 3, 4, 5]\n        Copied Array:   [1, 2, 3, 4, 5]"
+    },
+    {
+       
+        "programName": " Program to find the frequency of each element in the array",
+        "code": "<span class='colorGreen'>//  Program to find the frequency of each element in the array</span>\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class ElementFrequencyExample {\n    public static void main(String[] args) {\n        // Original array\n        int[] array = {1, 2, 3, 2, 4, 1, 5, 4, 2, 5};\n\n        // Map to store the frequency of each element\n        Map<Integer, Integer> frequencyMap = new HashMap<>();\n\n        // Count the frequency of each element\n        for (int element : array) {\n            // If the element is already in the map, increment its count\n            if (frequencyMap.containsKey(element)) {\n                frequencyMap.put(element, frequencyMap.get(element) + 1);\n            } else {\n                // If the element is not in the map, add it with count 1\n                frequencyMap.put(element, 1);\n            }\n        }\n\n        // Display the frequency of each element\n        for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {\n            System.out.println(\"Element \" + entry.getKey() + \" occurs \" + entry.getValue() + \" times.\");\n        }\n    }\n}        ",
+        "output": "Element 1 occurs 2 times.\n        Element 2 occurs 3 times.\n        Element 3 occurs 1 times.\n        Element 4 occurs 2 times.\n        Element 5 occurs 2 times."
+    },
+    {
+       
+        "programName": "Program to left rotate the elements of an array",
+        "code": "<span class='colorGreen'>// Program to left rotate the elements of an array</span>\npublic class LeftRotateArrayExample {\n    public static void main(String[] args) {\n        // Original array\n        int[] array = {1, 2, 3, 4, 5};\n\n        // Number of positions to rotate left\n        int positions = 2;\n\n        // Perform left rotation\n        leftRotateArray(array, positions);\n\n        // Display the rotated array\n        System.out.println(\"Rotated Array: \" + arrayToString(array));\n    }\n\n    // Helper method to left rotate the array\n    private static void leftRotateArray(int[] array, int positions) {\n        int length = array.length;\n\n        // Handle cases where the number of positions is greater than the array length\n        positions = positions % length;\n\n        // Create a temporary array to store rotated elements\n        int[] tempArray = new int[length];\n\n        // Copy elements to tempArray starting from the rotated positions\n        for (int i = 0; i < length; i++) {\n            tempArray[(i - positions + length) % length] = array[i];\n        }\n\n        // Copy elements from tempArray back to the original array\n        System.arraycopy(tempArray, 0, array, 0, length);\n    }\n\n    // Helper method to convert an array to a string\n    private static String arrayToString(int[] array) {\n        StringBuilder result = new StringBuilder(\"[\");\n        for (int i = 0; i < array.length; i++) {\n            result.append(array[i]);\n            if (i < array.length - 1) {\n                result.append(\", \");\n            }\n        }\n        result.append(\"]\");\n        return result.toString();\n    }\n}        ",
+        "output": "Rotated Array: [3, 4, 5, 1, 2]        "
+    },
+    {
+       
+        "programName": "Program to print the duplicate elements of an array",
+        "code": "<span class='colorGreen'>// Program to print the duplicate elements of an array</span>\n",
+        "output": "Duplicate Elements:\n        2\n        5\n        "
+    },
+    {
+       
+        "programName": "Program to print the elements of an array",
+        "code": "<span class='colorGreen'>// Program to print the elements of an array</span>\n",
+        "output": ""
+    },
+    {
+       
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": ""
+    }
+]
