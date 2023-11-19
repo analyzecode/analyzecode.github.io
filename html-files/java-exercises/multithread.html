@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java Programs</title>
+        <meta name="keywords" content="Java Programs">
+        <meta name="description" content="free java progrsmd for beginners step by step">
+        <link rel="stylesheet" href="../../../style.css">
+        <link rel="icon" href="../../../images/site-logo.svg" type="image/x-icon">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <div class="javaSearchBar">
+        <i class="bx bx-sm bx-search"></i>
+    <input type="text" id="searchInput" placeholder="Search programs...">
+</div>
+    <ol id="programList"></ol>
+</body>
+
+<script>
+    // Function to populate the program list
+    function populateProgramList(programs) {
+        const programList = document.getElementById('programList');
+        programs.forEach((program, index) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = program.programName;
+            listItem.addEventListener('click', () => redirectToCodePage(index));
+            programList.appendChild(listItem);
+        });
+    }
+
+    // Function to filter and display the program list based on the search input
+    function filterPrograms(programs, searchTerm) {
+        const programList = document.getElementById('programList');
+        programList.innerHTML = ''; // Clear the existing list
+
+        const filteredPrograms = programs.filter(program => {
+            return program.programName.toLowerCase().includes(searchTerm.toLowerCase());
+        });
+
+        if (filteredPrograms.length === 0) {
+            // No results found
+            const noResultItem = document.createElement('li');
+            noResultItem.textContent = 'No result found';
+            programList.appendChild(noResultItem);
+        } else {
+            // Display filtered results
+            filteredPrograms.forEach((program, index) => {
+                const listItem = document.createElement('li');
+                listItem.textContent = program.programName;
+                listItem.addEventListener('click', () => redirectToCodePage(program.index));
+                programList.appendChild(listItem);
+            });
+        }
+    }
+
+    // Function to redirect to the code page with the selected program index
+    function redirectToCodePage(index) {
+        window.location.href = `multithreadCode.html?programIndex=${index}`;
+    }
+
+    // Function to handle search input changes
+    function handleSearchInput() {
+        const searchInput = document.getElementById('searchInput');
+        const searchTerm = searchInput.value;
+        filterPrograms(programs, searchTerm);
+    }
+
+    // Fetch and load the program list from the JSON file
+    let programs = [];
+
+    fetch('multithread.json')
+        .then(response => response.json())
+        .then(data => {
+            // Assign index property to each program
+            programs = data.map((program, index) => ({ ...program, index }));
+            populateProgramList(programs);
+        })
+        .catch(error => console.error(error));
+
+    // Attach an input event listener to the search input
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', handleSearchInput);
+</script>
+
+</html>

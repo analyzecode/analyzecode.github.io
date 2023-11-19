@@ -1,0 +1,109 @@
+[
+    {
+        "programName": "Write a Java program to create a class called \"Person\" with a name and age attribute. Create two instances of the \"Person\" class, set their attributes using the constructor, and print their name and age.",
+        "code": "<span class='colorGreen'>// Write a Java program to create a class called \"Person\" with a name and age attribute. Create two instances of the \"Person\" class, set their attributes using the constructor, and print their name and age.</span>\nclass Person {\n    private String name;\n    private int age;\n    public Person(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n    public String getName() {\n        return name;\n    }\n    public int getAge() {\n        return age;\n    }\n}\n// Main.java\n class Main {\n  public static void main(String[] args) {\n    Person person1 = new Person(\"Ean Craig\", 11);\n    Person person2 = new Person(\"Evan Ross\", 12);\n    System.out.println(person1.getName() + \" is \" + person1.getAge() + \" years old.\");\n    System.out.println(person2.getName() + \" is \" + person2.getAge() + \" years old.\n\");\n  }\n}",
+        "output": "<img src='oopsImages/1.png'>"
+    },
+    {
+        "programName": "Write a Java program to create a class called \"Dog\" with a name and breed attribute. Create two instances of the \"Dog\" class, set their attributes using the constructor and modify the attributes using the setter methods and print the updated values.",
+        "code": "<span class='colorGreen'>// Write a Java program to create a class called \"Dog\" with a name and breed attribute. Create two instances of the \"Dog\" class, set their attributes using the constructor and modify the attributes using the setter methods and print the updated values.</span>\npublic class Dog {\n    private String name;\n    private String breed;\n\n    public Dog(String name, String breed) {\n        this.name = name;\n        this.breed = breed;\n    }\n\n    public void setName(String name) {\n        this.name = name;\n    }\n\n    public void setBreed(String breed) {\n        this.breed = breed;\n    }\n\n    public String getName() {\n        return name;\n    }\n\n    public String getBreed() {\n        return breed;\n    }\n\n    public static void main(String[] args) {\n        Dog dog1 = new Dog(\"Max\", \"Labrador\");\n        Dog dog2 = new Dog(\"Bella\", \"Golden Retriever\");\n\n        System.out.println(\"Initial values:\");\n        System.out.println(\"Dog 1 - Name: \" + dog1.getName() + \", Breed: \" + dog1.getBreed());\n        System.out.println(\"Dog 2 - Name: \" + dog2.getName() + \", Breed: \" + dog2.getBreed());\n\n        dog1.setName(\"Charlie\");\n        dog2.setBreed(\"German Shepherd\");\n\n        System.out.println(\"\nUpdated values:\");\n        System.out.println(\"Dog 1 - Name: \" + dog1.getName() + \", Breed: \" + dog1.getBreed());\n        System.out.println(\"Dog 2 - Name: \" + dog2.getName() + \", Breed: \" + dog2.getBreed());\n    }\n}        ",
+        "output": "<img src='oopsImages/2.png'>"
+    },
+    {
+        "programName": "Write a Java program to create a class called \"Book\" with attributes for title, author, and ISBN, and methods to add and remove books from a collection.",
+        "code": "<span class='colorGreen'>// Write a Java program to create a class called \"Book\" with attributes for title, author, and ISBN, and methods to add and remove books from a collection.</span>\nclass Book \n{\n    private String title;\n    private String author;\n    private String isbn;\n\n    public Book(String title, String author, String isbn) {\n        this.title = title;\n        this.author = author;\n        this.isbn = isbn;\n    }\n\n    public String getTitle() {\n        return title;\n    }\n\n    public String getAuthor() {\n        return author;\n    }\n\n    public String getISBN() {\n        return isbn;\n    }\n\n    @Override\n    public String toString() {\n        return \"Title: \" + title + \", Author: \" + author + \", ISBN: \" + isbn;\n    }\n}\n\nclass BookCollection \n{\n    private Book[] books;\n    private int size;\n\n    public BookCollection(int capacity) {\n        books = new Book[capacity];\n        size = 0;\n    }\n\n    public void addBook(Book book) {\n        if (size < books.length) {\n            books[size] = book;\n            size++;\n        } else {\n            System.out.println(\"Collection is full. Cannot add more books.\");\n        }\n    }\n\n    public void removeBook(Book book) {\n        for (int i = 0; i < size; i++) {\n            if (books[i] == book) {\n                // Shift elements to remove the book\n                for (int j = i; j < size - 1; j++) {\n                    books[j] = books[j + 1];\n                }\n                books[size - 1] = null;\n                size--;\n                System.out.println(\"Book removed from the collection.\");\n                return;\n            }\n        }\n        System.out.println(\"Book not found in the collection.\");\n    }\n\n    public void displayBooks() {\n        if (size == 0) {\n            System.out.println(\"The collection is empty.\");\n        } else {\n            for (int i = 0; i < size; i++) {\n                System.out.println(books[i]);\n            }\n        }\n    }\n}\n\nclass Check {\n    public static void main(String[] args) {\n        BookCollection collection = new BookCollection(3);\n\n        Book book1 = new Book(\"The Great Gatsby\", \"F. Scott Fitzgerald\", \"978-0743273565\");\n        Book book2 = new Book(\"To Kill a Mockingbird\", \"Harper Lee\", \"978-0061120084\");\n        Book book3 = new Book(\"1984\", \"George Orwell\", \"978-0451524935\");\n\n        collection.addBook(book1);\n        collection.addBook(book2);\n        collection.addBook(book3);\n\n        System.out.println(\"Books in the collection:\");\n        collection.displayBooks();\n\n        System.out.println(\"\nRemoving 'The Great Gatsby' from the collection.\");\n        collection.removeBook(book1);\n\n        System.out.println(\"\nUpdated list of books in the collection:\");\n        collection.displayBooks();\n    }\n}\n\n",
+        "output": "<img src='oopsImages/5.png'>"
+    },
+    {
+        "programName": "Write a Java program to create a class called \"Bank\" with a collection of accounts and methods to add and remove accounts, and to deposit and withdraw money. Also define a class called Account to maintain account details of a particular customer.",
+        "code": "<span class='colorGreen'>// Write a Java program to create a class called \"Bank\" with a collection of accounts and methods to add and remove accounts, and to deposit and withdraw money. Also define a class called Account to maintain account details of a particular customer.</span>\nimport java.util.ArrayList;\nimport java.util.List;\n\nclass Bank {\n    private List<Account> accounts;\n\n    public Bank() {\n        accounts = new ArrayList<>();\n    }\n\n    public void addAccount(Account account) {\n        accounts.add(account);\n    }\n\n    public void removeAccount(Account account) {\n        accounts.remove(account);\n    }\n\n    public void depositMoney(Account account, double amount) {\n        account.deposit(amount);\n    }\n\n    public void withdrawMoney(Account account, double amount) {\n        account.withdraw(amount);\n    }\n}\n\nclass Account {\n    private String customerName;\n    private double balance;\n\n    public Account(String customerName) {\n        this.customerName = customerName;\n        balance = 0.0;\n    }\n\n    public void deposit(double amount) {\n        balance += amount;\n    }\n\n    public void withdraw(double amount) {\n        if (balance >= amount) {\n            balance -= amount;\n        } else {\n            System.out.println(\"Insufficient balance\");\n        }\n    }\n\n    public double getBalance() {\n        return balance;\n    }\n}\n\nclass Main {\n    public static void main(String[] args) {\n        Bank bank = new Bank();\n\n        Account account1 = new Account(\"John Doe\");\n        Account account2 = new Account(\"Jane Smith\");\n\n        bank.addAccount(account1);\n        bank.addAccount(account2);\n\n        bank.depositMoney(account1, 1000.0);\n        bank.depositMoney(account2, 500.0);\n\n        bank.withdrawMoney(account1, 200.0);\n        bank.withdrawMoney(account2, 100.0);\n\n        System.out.println(\"Account 1 balance: \" + account1.getBalance());\n        System.out.println(\"Account 2 balance: \" + account2.getBalance());\n    }\n}",
+        "output": "<img src='oopsImages/7.png'>"
+    },
+    {
+        "programName": "Write a Java program to create class called \"TrafficLight\" with attributes for color and duration, and methods to change the color and check for red or green.",
+        "code": "<span class='colorGreen'>// Write a Java program to create class called \"TrafficLight\" with attributes for color and duration, and methods to change the color and check for red or green.</span>\nclass TrafficLight {\n     String color;\n     int durationInSeconds;\n    public TrafficLight(String initialColor, int initialDuration) {\n        this.color = initialColor;\n        this.durationInSeconds = initialDuration;\n    }\n\n   public void changeColor(String newColor) {\n        color = newColor;\n        System.out.println(\"Traffic light color changed to \" + color);\n    }\n\n    public boolean isRed() {\n        return color.equalsIgnoreCase(\"red\");\n    }\n\n    public boolean isGreen() {\n        return color.equalsIgnoreCase(\"green\");\n    }\n\n    public int getDuration() {\n        return durationInSeconds;\n    }\n\n    public void setDuration(int newDuration) {\n        durationInSeconds = newDuration;\n        System.out.println(\"Traffic light duration set to \" + durationInSeconds + \" seconds\");\n    }\n}\n\n class M3 {\n    public static void main(String[] args) {\n        TrafficLight trafficLight = new TrafficLight(\"red\", 60);\n\n        System.out.println(\"Initial State:\");\n        displayTrafficLightInfo(trafficLight);\n\n        trafficLight.changeColor(\"green\");\n        displayTrafficLightInfo(trafficLight);\n\n        System.out.println(\"Is it red? \" + trafficLight.isRed());\n\n        System.out.println(\"Is it green? \" + trafficLight.isGreen());\n\n        trafficLight.setDuration(45);\n        displayTrafficLightInfo(trafficLight);\n    }\n\n    private static void displayTrafficLightInfo(TrafficLight trafficLight) {\n        System.out.println(\"Current Color: \" + trafficLight.color);\n        System.out.println(\"Current Duration: \" + trafficLight.getDuration() + \" seconds\");\n        System.out.println();\n    }\n}",
+        "output": "<img src='oopsImages/8.png'>"
+    },
+    {
+        "programName": "Write a Java program to create a class called \"Employee\" with a name, salary, and hire date attributes, and a method to calculate years of service.",
+        "code": "<span class='colorGreen'>// Write a Java program to create a class called \"Employee\" with a name, salary, and hire date attributes, and a method to calculate years of service.</span>\nimport java.text.SimpleDateFormat;\nimport java.util.Date;\n\nclass Employee {\n    private String name;\n    private double salary;\n    private Date hireDate;\n\n    public Employee(String name, double salary, Date hireDate) {\n        this.name = name;\n        this.salary = salary;\n        this.hireDate = hireDate;\n    }\n\n    public String getName() {\n        return name;\n    }\n\n    public double getSalary() {\n        return salary;\n    }\n\n    public Date getHireDate() {\n        return hireDate;\n    }\n\n    public int calculateYearsOfService() {\n        Date currentDate = new Date();\n        long millisecondsInYear = 1000L * 60 * 60 * 24 * 365;\n        long difference = currentDate.getTime() - hireDate.getTime();\n        int years = (int) (difference / millisecondsInYear);\n        return years;\n    }\n}\n\n class kamal7019javaOOP9 {\n    public static void main(String[] args) {\n        try {\n            SimpleDateFormat dateFormat = new SimpleDateFormat(\"yyyy-MM-dd\");\n            Date hireDate = dateFormat.parse(\"2010-06-15\");\n            \n            Employee employee = new Employee(\"John Doe\", 60000.0, hireDate);\n\n            System.out.println(\"Name: \" + employee.getName());\n            System.out.println(\"Salary: $\" + employee.getSalary());\n            System.out.println(\"Hire Date: \" + dateFormat.format(employee.getHireDate()));\n\n            int yearsOfService = employee.calculateYearsOfService();\n            System.out.println(\"Years of Service: \" + yearsOfService + \" years\");\n        } catch (Exception e) {\n            System.out.println(\"Error: \" + e.getMessage());\n        }\n    }\n}        ",
+        "output": "<img src='oopsImages/9.png'>"
+    },
+    {
+        "programName": "Write a Java program to create a class called \"Student\" with a name, grade, and courses attributes, and methods to add and remove courses.",
+        "code": "<span class='colorGreen'>// Write a Java program to create a class called \"Student\" with a name, grade, and courses attributes, and methods to add and remove courses.</span>\nimport java.util.ArrayList;\nimport java.util.List;\n\nclass Student {\n    private String name;\n    private int grade;\n    private List<String> courses;\n\n    public Student(String name, int grade) {\n        this.name = name;\n        this.grade = grade;\n        this.courses = new ArrayList<String>();\n    }\n\n    public String getName() {\n        return name;\n    }\n\n    public int getGrade() {\n        return grade;\n    }\n\n    public List<String> getCourses() {\n        return courses;\n    }\n\n    public void addCourse(String courseName) {\n        courses.add(courseName);\n    }\n\n    public void removeCourse(String courseName) {\n        courses.remove(courseName);\n    }\n\n    public void displayStudentInfo() {\n        System.out.println(\"Name: \" + name);\n        System.out.println(\"Grade: \" + grade);\n        System.out.println(\"Courses: \" + courses);\n    }\n}\n\nclass StudentTest {\n    public static void main(String[] args) {\n        Student student1 = new Student(\"Bharat Bhatt\",7101);\n\n        student1.addCourse(\"Maths\");\n        student1.addCourse(\"Java\");\n        student1.addCourse(\"PhP\");\n\n        System.out.println(\"Student Information:\");\n        student1.displayStudentInfo();\n\n        student1.removeCourse(\"Maths\");\n\n        System.out.println(\"\nStudent Information after removing a course:\");\n        student1.displayStudentInfo();\n    }\n}",
+        "output": "<img src='oopsImages/10.png'>"
+    },
+    {
+        "programName": "Write a Java program to create a class called \"Library\" with a collection of books and methods to add and remove books.",
+        "code": "<span class='colorGreen'>// Write a Java program to create a class called \"Library\" with a collection of books and methods to add and remove books.</span>\nimport java.util.ArrayList;\nimport java.util.Iterator;\nimport java.util.List;\n\npublic class Library {\n    private List<Book> books;\n\n    public Library() {\n        books = new ArrayList<>();\n    }\n\n    public void addBook(Book book) {\n        books.add(book);\n        System.out.println(\"Book added to the library.\");\n    }\n\n    public void removeBook(String isbn) {\n        Iterator<Book> iterator = books.iterator();\n        while (iterator.hasNext()) {\n            Book book = iterator.next();\n            if (book.getIsbn().equals(isbn)) {\n                iterator.remove();\n                System.out.println(\"Book removed from the library.\");\n                return;\n            }\n        }\n        System.out.println(\"Book with ISBN \" + isbn + \" not found in the library.\");\n    }\n\n    public void displayAllBooks() {\n        if (books.isEmpty()) {\n            System.out.println(\"The library has no books.\");\n        } else {\n            System.out.println(\"Books in the library:\");\n            for (Book book : books) {\n                book.displayBookInfo();\n            }\n        }\n    }\n\n    public static class Book {\n        private String title;\n        private String author;\n        private String isbn;\n\n        public Book(String title, String author, String isbn) {\n            this.title = title;\n            this.author = author;\n            this.isbn = isbn;\n        }\n\n        public String getTitle() {\n            return title;\n        }\n\n        public String getAuthor() {\n            return author;\n        }\n\n        public String getIsbn() {\n            return isbn;\n        }\n\n        public void displayBookInfo() {\n            System.out.println(\"Title: \" + title);\n            System.out.println(\"Author: \" + author);\n            System.out.println(\"ISBN: \" + isbn);\n            System.out.println();\n        }\n    }\n\n    public static void main(String[] args) {\n        Library library = new Library();\n\n        Book book1 = new Book(\"Java Programming\", \"John Doe\", \"123456789\");\n        Book book2 = new Book(\"Python Basics\", \"Jane Smith\", \"987654321\");\n\n        library.addBook(book1);\n        library.addBook(book2);\n\n        System.out.println(\"Books in the library after adding:\");\n        library.displayAllBooks();\n\n        library.removeBook(\"123456789\");\n\n        System.out.println(\"\nBooks in the library after removal:\");\n        library.displayAllBooks();\n    }\n}",
+        "output": "<img src='oopsImages/11.png'>"
+    },
+
+    {
+        "programName": "Write a Java program to create a class called \"MusicLibrary\" with a collection of songs and methods to add and remove songs, and to play a random song.",
+        "code": "<span class='colorGreen'>// Write a Java program to create a class called \"MusicLibrary\" with a collection of songs and methods to add and remove songs, and to play a random song.</span>\nimport java.time.LocalTime;\n\nclass SystemTime {\n    public static void main(String[] args) {\n        LocalTime currentTime = LocalTime.now();\n\n        System.out.println(\"System Time: \" + currentTime);\n    }\n}",
+        "output": "<img src='oopsImages/15.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/16.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/18.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/20.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/21.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/23.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/25.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/27.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/29.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/30.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/23.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/31.png'>"
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": "<img src='oopsImages/32.png'>"
+    }
+]
+
