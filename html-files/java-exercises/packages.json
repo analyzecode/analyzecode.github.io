@@ -1,0 +1,22 @@
+[
+    {
+        "programName": " Create a Java program to access the java.util.Date class through import keyword and print the current date of the system.",
+        "code": "<span class='colorGreen'>//  Create a Java program to access the java.util.Date class through import keyword and print the current date of the system.</span>\nimport java.util.Date;\nclass A{\n    public static void main(String a[])\n    {\n        Date obj = new  Date();\n        System.out.println(obj); \n    }\n}",
+        "output": "<img src='packagesImages/1.png'>"
+    },
+    {
+        "programName": "Create a Java program to access the java.util.Date class through qualified way and print the current date of the system.",
+        "code": "<span class='colorGreen'>// Create a Java program to access the java.util.Date class through qualified way and print the current date of the system.</span>\npublic class packages2_7024 {\n    public static void main(String[] args) {\n        java.util.Date currentDate = new java.util.Date();\n        System.out.println(\"Current Date: \" + currentDate);\n    }\n}",
+        "output": "<img src='packagesImages/2.png'>"
+    },
+    {
+        "programName": " Create a Java program to access the java.util.Date class through import keyword and print the current date of the system but inherit the Date class.",
+        "code": "<span class='colorGreen'>//  Create a Java program to access the java.util.Date class through import keyword and print the current date of the system but inherit the Date class.</span>\nimport java.util.Date;\n\npublic class CustomDate {\n    private Date date;\n\n    public CustomDate() {\n        date = new Date();\n    }\n\n    public Date getCurrentDate() {\n        return date;\n    }\n\n    public static void main(String[] args) {\n        CustomDate customDate = new CustomDate();\n        Date currentDate = customDate.getCurrentDate();\n\n        System.out.println(\"Current Date: \" + currentDate);\n    }\n}        ",
+        "output": "<img src='packagesImages/3.png'>"
+    },
+    {
+        "programName": "Create a Java program to access the java.util.Date class through qualified way and print the current date of the system but inherit the Date class.",
+        "code": "<span class='colorGreen'>// Create a Java program to access the java.util.Date class through qualified way and print the current date of the system but inherit the Date class.</span>\nclass Date {\n        public static void main(String args[]){\n        java.util.Date date=new java.util.Date();  \n        System.out.println(date); \n        }\n    }\n            ",
+        "output": "<img src='packagesImages/4.png'>"
+    }
+]

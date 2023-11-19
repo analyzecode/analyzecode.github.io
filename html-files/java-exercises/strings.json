@@ -1,0 +1,47 @@
+[
+    {
+        "programName": "Program to Check if a String contains only digits?",
+        "code": "<span class='colorGreen'>// Program to Check if a String contains only digits?</span>\npublic class CheckDigitsExample {\n    public static void main(String[] args) {\n        // Test Strings\n        String str1 = \"12345\";\n        String str2 = \"abc123\";\n        String str3 = \"6789xyz\";\n        String str4 = \"\";\n\n        // Check if Strings contain only digits\n        checkDigits(str1);\n        checkDigits(str2);\n        checkDigits(str3);\n        checkDigits(str4);\n    }\n\n    // Helper method to check if a String contains only digits\n    private static void checkDigits(String str) {\n        if (str.matches(\"\\d+\")) {\n            System.out.println(\"'\" + str + \"' contains only digits.\");\n        } else {\n            System.out.println(\"'\" + str + \"' does not contain only digits.\");\n        }\n    }\n}        ",
+        "output": "'12345' contains only digits.\n        'abc123' does not contain only digits.\n        '6789xyz' does not contain only digits.\n        '' does not contain only digits.        "
+    },
+    {
+        "programName": "Program to perform Deep Copy for String?",
+        "code": "<span class='colorGreen'>// Program to perform Deep Copy for String?</span>\npublic class DeepCopyStringExample {\n    public static void main(String[] args) {\n        // Original string\n        String originalString = \"Hello, World!\";\n\n        // Perform deep copy using the String constructor\n        String deepCopyString1 = new String(originalString);\n\n        // Perform deep copy using the substring method\n        String deepCopyString2 = originalString.substring(0);\n\n        // Display original and deep copy strings\n        System.out.println(\"Original String: \" + originalString);\n        System.out.println(\"Deep Copy String 1: \" + deepCopyString1);\n        System.out.println(\"Deep Copy String 2: \" + deepCopyString2);\n    }\n}        ",
+        "output": "Original String: Hello, World!\n        Deep Copy String 1: Hello, World!\n        Deep Copy String 2: Hello, World!\n        "
+    },
+    {
+        "programName": "Program to prove String is immutable programmatically?",
+        "code": "<span class='colorGreen'>// Program to prove String is immutable programmatically?</span>\npublic class ImmutableStringExample {\n    public static void main(String[] args) {\n        // Original string\n        String originalString = \"Hello, World!\";\n\n        // Modify the original string\n        String modifiedString = modifyString(originalString);\n\n        // Display original and modified strings\n        System.out.println(\"Original String: \" + originalString);\n        System.out.println(\"Modified String: \" + modifiedString);\n    }\n\n    // Helper method to modify a string\n    private static String modifyString(String str) {\n        // Strings are immutable, so any modification results in a new string\n        str = str.concat(\" Welcome!\");\n\n        return str;\n    }\n}        ",
+        "output": "Original String: Hello, World!\n        Modified String: Hello, World! Welcome!        "
+    },
+    {
+        "programName": "Program to remove all occurrences of a given character from input String?",
+        "code": "<span class='colorGreen'>// Program to remove all occurrences of a given character from input String?</span>\nimport java.util.Scanner;\n\npublic class RemoveCharacterExample {\n    public static void main(String[] args) {\n        // Input string\n        Scanner scanner = new Scanner(System.in);\n        System.out.print(\"Enter a string: \");\n        String inputString = scanner.nextLine();\n\n        // Input character to remove\n        System.out.print(\"Enter the character to remove: \");\n        char charToRemove = scanner.next().charAt(0);\n\n        // Remove occurrences of the specified character\n        String resultString = removeCharacter(inputString, charToRemove);\n\n        // Display the result\n        System.out.println(\"Original String: \" + inputString);\n        System.out.println(\"String after removing '\" + charToRemove + \"': \" + resultString);\n    }\n\n    // Helper method to remove occurrences of a character from a string\n    private static String removeCharacter(String str, char charToRemove) {\n        // Use StringBuilder for efficient string manipulation\n        StringBuilder result = new StringBuilder();\n\n        // Iterate through each character in the original string\n        for (char c : str.toCharArray()) {\n            // Append the character to the result if it is not the one to be removed\n            if (c != charToRemove) {\n                result.append(c);\n            }\n        }\n\n        // Convert StringBuilder to String\n        return result.toString();\n    }\n}        ",
+        "output": "Enter a string: programming\n        Enter the character to remove: r\n        Original String: programming\n        String after removing 'r': pogamming\n        "
+    },
+    {
+        "programName": "Program to append the string using StringBuffer class",
+        "code": "<span class='colorGreen'>// Program to append the string using StringBuffer class</span>\npublic class StringBufferExample {\n    public static void main(String[] args) {\n        // Create a StringBuffer\n        StringBuffer stringBuffer = new StringBuffer(\"Hello, \");\n\n        // Append strings\n        stringBuffer.append(\"Java \").append(\"Programming\").append(\"!\");\n\n        // Display the result\n        System.out.println(\"Appended String: \" + stringBuffer.toString());\n    }\n}        ",
+        "output": "Appended String: Hello, Java Programming!        "
+    },
+    {
+        "programName": "Program to insert the string using StringBuffer class",
+        "code": "<span class='colorGreen'>// Program to insert the string using StringBuffer class</span>\npublic class StringBufferInsertExample {\n    public static void main(String[] args) {\n        // Original string\n        StringBuffer originalBuffer = new StringBuffer(\"Hello, Programming!\");\n\n        // String to insert\n        String toInsert = \"Java \";\n\n        // Index at which to insert the string\n        int insertIndex = 7;\n\n        // Insert the string\n        originalBuffer.insert(insertIndex, toInsert);\n\n        // Display the result\n        System.out.println(\"Original String: \" + originalBuffer.toString());\n    }\n}        ",
+        "output": "Original String: Hello, Java Programming!        "
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": ""
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": ""
+    },
+    {
+        "programName": "",
+        "code": "<span class='colorGreen'>// </span>\n",
+        "output": ""
+    }
+]

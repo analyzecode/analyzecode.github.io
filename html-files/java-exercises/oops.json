@@ -44,66 +44,6 @@
         "programName": "Write a Java program to create a class called \"MusicLibrary\" with a collection of songs and methods to add and remove songs, and to play a random song.",
         "code": "<span class='colorGreen'>// Write a Java program to create a class called \"MusicLibrary\" with a collection of songs and methods to add and remove songs, and to play a random song.</span>\nimport java.time.LocalTime;\n\nclass SystemTime {\n    public static void main(String[] args) {\n        LocalTime currentTime = LocalTime.now();\n\n        System.out.println(\"System Time: \" + currentTime);\n    }\n}",
         "output": "<img src='oopsImages/15.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/16.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/18.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/20.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/21.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/23.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/25.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/27.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/29.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/30.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/23.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/31.png'>"
-    },
-    {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": "<img src='oopsImages/32.png'>"
     }
 ]
 
