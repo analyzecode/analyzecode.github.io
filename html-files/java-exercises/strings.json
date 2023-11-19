@@ -30,18 +30,28 @@
         "output": "Original String: Hello, Java Programming!        "
     },
     {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": ""
+        "programName": "Program to Add Characters to a String",
+        "code": "<span class='colorGreen'>// Program to Add Characters to a String</span>\npublic class AddCharactersToStringExample {\n    public static void main(String[] args) {\n        // Original string\n        String originalString = \"Hello, \";\n\n        // Characters to add\n        String charactersToAdd = \"World!\";\n\n        // Add characters using concat method\n        String resultString = originalString.concat(charactersToAdd);\n\n        // Display the result\n        System.out.println(\"Result String: \" + resultString);\n    }\n}        ",
+        "output": "Result String: Hello, World!        "
     },
     {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": ""
+        "programName": " Program to Add Characters to a String",
+        "code": "<span class='colorGreen'>//  Program to Add Characters to a String</span>\npublic class AddCharactersToStringExample {\n    public static void main(String[] args) {\n        // Original string\n        String originalString = \"Hello, \";\n\n        // Characters to add\n        String charactersToAdd = \"World!\";\n\n        // Approach 1: Using concat method\n        String resultStringConcat = originalString.concat(charactersToAdd);\n\n        // Approach 2: Using + operator\n        String resultStringPlusOperator = originalString + charactersToAdd;\n\n        // Approach 3: Using StringBuilder\n        StringBuilder stringBuilder = new StringBuilder(originalString);\n        stringBuilder.append(charactersToAdd);\n        String resultStringBuilder = stringBuilder.toString();\n\n        // Display the results\n        System.out.println(\"Original String: \" + originalString);\n        System.out.println(\"Result (concat): \" + resultStringConcat);\n        System.out.println(\"Result (+ operator): \" + resultStringPlusOperator);\n        System.out.println(\"Result (StringBuilder): \" + resultStringBuilder);\n    }\n}        ",
+        "output": "Original String: Hello, \n        Result (concat): Hello, World!\n        Result (+ operator): Hello, World!\n        Result (StringBuilder): Hello, World!\n        "
     },
     {
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": ""
+        "programName": "Program to Check Anagram",
+        "code": "<span class='colorGreen'>// Program to Check Anagram</span>\nimport java.util.Arrays;\n\npublic class AnagramCheck {\n    public static void main(String[] args) {\n        // Test cases\n        String str1 = \"listen\";\n        String str2 = \"silent\";\n\n        // Check if the strings are anagrams\n        boolean isAnagram = checkAnagram(str1, str2);\n\n        // Display the result\n        if (isAnagram) {\n            System.out.println(str1 + \" and \" + str2 + \" are anagrams.\");\n        } else {\n            System.out.println(str1 + \" and \" + str2 + \" are not anagrams.\");\n        }\n    }\n\n    // Helper method to check if two strings are anagrams\n    private static boolean checkAnagram(String str1, String str2) {\n        // Remove spaces and convert to lowercase for case-insensitive comparison\n        str1 = str1.replaceAll(\"\\s\", \"\").toLowerCase();\n        str2 = str2.replaceAll(\"\\s\", \"\").toLowerCase();\n\n        // Check if the sorted strings are equal\n        return Arrays.equals(str1.chars().sorted().toArray(), str2.chars().sorted().toArray());\n    }\n}        ",
+        "output": "listen and silent are anagrams.        "
+    },
+    {
+        "programName": " Program to check whether a string is a Palindrome",
+        "code": "<span class='colorGreen'>//  Program to check whether a string is a Palindrome</span>\npublic class PalindromeCheck {\n    public static void main(String[] args) {\n        // Test cases\n        String str1 = \"radar\";\n        String str2 = \"hello\";\n\n        // Check if the strings are palindromes\n        boolean isPalindrome1 = isPalindrome(str1);\n        boolean isPalindrome2 = isPalindrome(str2);\n\n        // Display the result\n        if (isPalindrome1) {\n            System.out.println(str1 + \" is a palindrome.\");\n        } else {\n            System.out.println(str1 + \" is not a palindrome.\");\n        }\n\n        if (isPalindrome2) {\n            System.out.println(str2 + \" is a palindrome.\");\n        } else {\n            System.out.println(str2 + \" is not a palindrome.\");\n        }\n    }\n\n    // Helper method to check if a string is a palindrome\n    private static boolean isPalindrome(String str) {\n        // Remove spaces and convert to lowercase for case-insensitive comparison\n        str = str.replaceAll(\"\\s\", \"\").toLowerCase();\n\n        // Check if the string is the same when reversed\n        String reversedStr = new StringBuilder(str).reverse().toString();\n        return str.equals(reversedStr);\n    }\n}        ",
+        "output": "radar is a palindrome.\n        hello is not a palindrome.        "
+    },
+    {
+        "programName": "Program to Convert Enum to String",
+        "code": "<span class='colorGreen'>// Program to Convert Enum to String</span>\n// Define an enum\nenum Weekday {\n    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY\n}\n\npublic class EnumToStringExample {\n    public static void main(String[] args) {\n        // Convert enum to string\n        Weekday day = Weekday.WEDNESDAY;\n        String dayString = day.toString();\n\n        // Display the result\n        System.out.println(\"Enum constant: \" + day);\n        System.out.println(\"Enum as String: \" + dayString);\n    }\n}        ",
+        "output": "Enum constant: WEDNESDAY\n        Enum as String: WEDNESDAY        "
     }
 ]

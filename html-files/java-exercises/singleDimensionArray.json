@@ -21,19 +21,25 @@
     {
        
         "programName": "Program to print the duplicate elements of an array",
-        "code": "<span class='colorGreen'>// Program to print the duplicate elements of an array</span>\n",
+        "code": "<span class='colorGreen'>// Program to print the duplicate elements of an array</span>\nimport java.util.HashMap;\nimport java.util.Map;\n\npublic class DuplicateElementsExample {\n    public static void main(String[] args) {\n        // Original array with duplicates\n        int[] array = {1, 2, 3, 2, 4, 5, 6, 5, 7};\n\n        // Find and print duplicate elements\n        printDuplicateElements(array);\n    }\n\n    // Helper method to find and print duplicate elements\n    private static void printDuplicateElements(int[] array) {\n        // Map to store the frequency of each element\n        Map<Integer, Integer> frequencyMap = new HashMap<>();\n\n        // Count the frequency of each element\n        for (int element : array) {\n            // If the element is already in the map, increment its count\n            if (frequencyMap.containsKey(element)) {\n                frequencyMap.put(element, frequencyMap.get(element) + 1);\n            } else {\n                // If the element is not in the map, add it with count 1\n                frequencyMap.put(element, 1);\n            }\n        }\n\n        // Print duplicate elements\n        System.out.println(\"Duplicate Elements:\");\n\n        for (Map.Entry<Integer, Integer> entry : frequencyMap.entrySet()) {\n            if (entry.getValue() > 1) {\n                System.out.println(entry.getKey());\n            }\n        }\n    }\n}        ",
         "output": "Duplicate Elements:\n        2\n        5\n        "
     },
     {
        
         "programName": "Program to print the elements of an array",
-        "code": "<span class='colorGreen'>// Program to print the elements of an array</span>\n",
-        "output": ""
+        "code": "<span class='colorGreen'>// Program to print the elements of an array</span>\npublic class PrintArrayExample {\n    public static void main(String[] args) {\n        // Original array\n        int[] array = {1, 2, 3, 4, 5};\n\n        // Print the array\n        System.out.println(\"Elements of the array:\");\n        printArray(array);\n    }\n\n    // Helper method to print an array\n    private static void printArray(int[] arr) {\n        for (int element : arr) {\n            System.out.print(element + \" \");\n        }\n    }\n}        ",
+        "output": "Elements of the array:\n        1 2 3 4 5        "
     },
     {
        
-        "programName": "",
-        "code": "<span class='colorGreen'>// </span>\n",
-        "output": ""
+        "programName": "Program to print the elements of an array in reverse order",
+        "code": "<span class='colorGreen'>// Program to print the elements of an array in reverse order</span>\npublic class ReverseArrayExample {n\n    public static void main(String[] args) {n\n        // Original arrayn\n        int[] array = {1, 2, 3, 4, 5};n\nn\n        // Print original arrayn\n        System.out.println(\"Original Array:\");n\n        printArray(array);n\nn\n        // Print array in reverse ordern\n        System.out.println(\"\nArray in Reverse Order:\");n\n        printReverseArray(array);n\n    }n\nn\n    // Helper method to print an arrayn\n    private static void printArray(int[] arr) {n\n        for (int element : arr) {n\n            System.out.print(element + \" \");n\n        }n\n        System.out.println();n\n    }n\nn\n    // Helper method to print an array in reverse ordern\n    private static void printReverseArray(int[] arr) {n\n        for (int i = arr.length - 1; i >= 0; i--) {n\n            System.out.print(arr[i] + \" \");n\n        }n\n        System.out.println();n\n    }n\n}        ",
+        "output": "Original Array:\n        1 2 3 4 5 \n        \n        Array in Reverse Order:\n        5 4 3 2 1 \n        "
+    },
+    {
+       
+        "programName": "Program to print the elements of an array present on even position",
+        "code": "<span class='colorGreen'>// Program to print the elements of an array present on even position        </span>\npublic class EvenPositionElementsExample {\n    public static void main(String[] args) {\n        // Original array\n        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\n\n        // Print elements at even positions\n        System.out.println(\"Elements at even positions:\");\n        printEvenPositionElements(array);\n    }\n\n    // Helper method to print elements at even positions of an array\n    private static void printEvenPositionElements(int[] arr) {\n        for (int i = 1; i < arr.length; i += 2) {\n            System.out.print(arr[i] + \" \");\n        }\n    }\n}        ",
+        "output": "Elements at even positions:\n        2 4 6 8 10"
     }
 ]
